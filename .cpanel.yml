@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    # Install python dependencies into the virtualenv
+    - python3 -m pip install --upgrade pip
+    - python3 -m pip install -r requirements.txt
