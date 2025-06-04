@@ -1,0 +1,551 @@
+{
+  "company_id": "unitedhomelife",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "No height/weight build chart is provided in this guide; underwriting is based entirely on medical and non‐medical issue criteria.",
+      "tables": []
+    },
+    "medical_conditions": {
+      "description": "Each medical condition is mapped to a set of UHL/UFFL products (GIWL, EIWL, Deluxe Term, Deluxe, Premier Term, Provider). \"Y\" indicates acceptance (with possible rating), \"N\" indicates decline. \"Y‐Maybe\" indicates possible preferred consideration.",
+      "conditions": [
+        {
+          "condition": "AIDS / HIV / ARC",
+          "guideline": "Declined for all products.",
+          "rate_classes": ["Decline for GIWL","Decline for EIWL","Decline for Deluxe Term","Decline for Deluxe","Decline for Premier Term","Decline for Provider"]
+        },
+        {
+          "condition": "ALS (Lou Gehrig's disease)",
+          "guideline": "Accepted (with possible rating) for GIWL; possibly accepted for EIWL (subject to further review); declined for all other products.",
+          "rate_classes": ["GIWL","EIWL (Maybe)","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Alzheimer's Disease",
+          "guideline": "Declined for all products.",
+          "rate_classes": ["Decline for GIWL","Decline for EIWL","Decline for Deluxe Term","Decline for Deluxe","Decline for Premier Term","Decline for Provider"]
+        },
+        {
+          "condition": "Aneurysm <12 months",
+          "guideline": "Accepted for GIWL; declined on EIWL and all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Aneurysm >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Aneurysm >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, and Deluxe Term; accepted for Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Aneurysm >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Angioplasty <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Angioplasty >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Angioplasty >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Angioplasty >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Bipolar Disorder",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Blood Pressure Controlled",
+          "guideline": "Accepted (possibly non-preferred) for all products.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Provider"]
+        },
+        {
+          "condition": "Cancer diagnosis / treatment <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Cancer diagnosis / treatment >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Cancer diagnosis / treatment >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Cancer treatment >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Cardiomyopathy <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Cardiomyopathy >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Cardiomyopathy >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Cardiomyopathy >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Cholesterol Treatment",
+          "guideline": "Accepted (possibly non-preferred) for all products.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Provider"]
+        },
+        {
+          "condition": "Circulatory Disorders (excluding varicose veins) <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Circulatory Disorders (excluding varicose veins) >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Circulatory Disorders (excluding varicose veins) >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Circulatory Disorders (excluding varicose veins) >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "COPD – on Oxygen",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "COPD – never on Oxygen",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Congestive Heart Failure <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Congestive Heart Failure >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Congestive Heart Failure >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Congestive Heart Failure >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Dementia",
+          "guideline": "Declined for all products.",
+          "rate_classes": ["Decline for GIWL","Decline for EIWL","Decline for Deluxe Term","Decline for Deluxe","Decline for Premier Term","Decline for Provider"]
+        },
+        {
+          "condition": "Diabetes (no insulin)",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, Premier Term, and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Provider"]
+        },
+        {
+          "condition": "Diabetes (insulin treatment)",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Disability (Under age 65)",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Drugs (illegal / abused prescriptions) or alcohol, treatment / advised to have treatment <12 months",
+          "guideline": "Declined for all products.",
+          "rate_classes": ["Decline for GIWL","Decline for EIWL","Decline for Deluxe Term","Decline for Deluxe","Decline for Premier Term","Decline for Provider"]
+        },
+        {
+          "condition": "Drugs (illegal / abused prescriptions) or alcohol, treatment / advised to have treatment >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Drugs (illegal / abused prescriptions) or alcohol, treatment / advised to have treatment >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Attack / Heart Surgery <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Attack / Heart Surgery >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Attack / Heart Surgery >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Attack / Heart Surgery >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Stent <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Stent >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Stent >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Stent >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Valve Disease <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Valve Disease >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Valve Disease >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Heart Valve Disease >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Huntington's Disease",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Irregular Heart Rhythm <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Irregular Heart Rhythm >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Irregular Heart Rhythm >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Irregular Heart Rhythm >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Kidney Dialysis",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Kidney Disease / No Dialysis (including renal insufficiency)",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Liver Disease (including cirrhosis, Hepatitis B or C)",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Lung Disease / Respiratory Disease (excluding mild, controlled asthma)",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Major Depression w/ hospitalization within 12 months",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Mild Asthma & no hospitalization within past 2 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, Premier Term, and Provider; possibly preferred for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Provider (Maybe Preferred)"]
+        },
+        {
+          "condition": "Muscular Dystrophy",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Multiple Sclerosis",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Neuropathy, Retinopathy, or Nephropathy caused by diabetic complications",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Organ Transplant",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Oxygen use",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Parkinson's Disease",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Peripheral Artery Disease (PAD/PVD) <12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Peripheral Artery Disease (PAD/PVD) >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Peripheral Artery Disease (PAD/PVD) >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Peripheral Artery Disease (PAD/PVD) >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Sickle Cell (for kids and adults)",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Seizure history controlled / no seizure within 2 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, Premier Term, and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Provider"]
+        },
+        {
+          "condition": "Seizure within 2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Schizophrenia",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Sleep Apnea – no oxygen use (CPAP acceptable)",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, Premier Term; no explicit entry for Provider → assume accepted for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Provider"]
+        },
+        {
+          "condition": "SLE (Lupus)",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Stroke w/in 12 months",
+          "guideline": "Accepted for GIWL; declined for all other products.",
+          "rate_classes": ["GIWL","Decline EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Stroke >12 months, <2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Stroke >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "Stroke >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "TIA within 2 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products.",
+          "rate_classes": ["GIWL","EIWL","Decline Deluxe Term","Decline Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "TIA >2 years, <5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Decline Premier Term","Decline Provider"]
+        },
+        {
+          "condition": "TIA >5 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider.",
+          "rate_classes": ["GIWL","EIWL","Deluxe Term","Deluxe","Premier Term","Decline Provider"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "No blood, urine, or paramedical exams are specified—underwriting decisions are made solely from the condition tables above (fully simplified disease model).",
+      "tables": []
+    },
+    "risk_classes": {
+      "description": "Each UHL/UFFL product code (GIWL, EIWL, Deluxe Term, Deluxe, Premier Term, Provider) serves as a 'risk class.' Acceptance is condition- and time-frame–driven per product.",
+      "classes": [
+        {
+          "name": "GIWL (Guaranteed Issue Whole Life)",
+          "criteria": [
+            "Most conditions accepted (Y) regardless of timeframe, except those specifically declined (e.g., AIDS/HIV, Alzheimer's, Dementia, Terminal illness).",
+            "No build chart or lab tests required—guaranteed issue subject to disease questions only."
+          ]
+        },
+        {
+          "name": "EIWL (Express Issue Whole Life)",
+          "criteria": [
+            "Most conditions accepted if treated >12 months ago; recent events (<12 months) may be declined or require GIWL instead.",
+            "Certain conditions (e.g., ALS) accepted only with \"Maybe Preferred\" consideration."
+          ]
+        },
+        {
+          "name": "Deluxe Term",
+          "criteria": [
+            "Conditions accepted if treated >2 years ago (Y in that column); recent events (<2 years) result in decline.",
+            "Mild controlled conditions (e.g., well‐controlled diabetes, mild asthma) are allowed."
+          ]
+        },
+        {
+          "name": "Deluxe (Permanent)",
+          "criteria": [
+            "Most conditions accepted if treated >2 years ago; some accepted at >5 years (Y in that column).",
+            "Mild conditions (e.g., controlled hypertension, mild asthma) accepted."
+          ]
+        },
+        {
+          "name": "Premier Term",
+          "criteria": [
+            "Only applicants with no significant disease history (all \"Y\" in >5 years column) or controlled benign conditions are accepted.",
+            "No acceptance for most conditions except those with \"Y\" in the >5 years column."
+          ]
+        },
+        {
+          "name": "Provider (Preferred Whole Life)",
+          "criteria": [
+            "Only a very narrow set of conditions accepted (e.g., mild asthma, well‐controlled diabetes without complications, mild hyperlipidemia) marked \"Y\" in the >5 years or \"Y (Maybe Pref'd)\" column.",
+            "All other conditions result in decline or downgraded product."
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "No explicit tobacco table is given (nicotine is treated as a medical condition under \"Nicotine use\"), but DUI, felony, hazardous sports, and other non‐medical issues appear below.",
+      "classifications": []
+    },
+    "financial_underwriting": {
+      "description": "Not addressed in this guide (final expense and simplified‐issue focus). No income multiples or financial docs required.",
+      "income_multiples": []
+    },
+    "special_considerations": {
+      "description": "Non‐medical issue factors (e.g., DUI, felony conviction, hazardous sports/aviation, declined within past years) determine product eligibility or decline.",
+      "factors": [
+        {
+          "factor": "Declined within past 12 months",
+          "guideline": "Decline for all products."
+        },
+        {
+          "factor": "Declined >12 months, <2 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider."
+        },
+        {
+          "factor": "Declined >2 years ago",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider."
+        },
+        {
+          "factor": "DUI within 2 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider."
+        },
+        {
+          "factor": "DUI >5 years ago",
+          "guideline": "Accepted for all products, including Provider (Provider may consider as \"Maybe Preferred\")."
+        },
+        {
+          "factor": "Felony conviction or on parole for felony within 7 years",
+          "guideline": "Accepted for GIWL and EIWL; declined for all other products."
+        },
+        {
+          "factor": "Felony conviction or on parole for felony >7 years, <10 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider."
+        },
+        {
+          "factor": "Felony conviction or on parole for felony >10 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, Deluxe, and Premier Term; declined for Provider."
+        },
+        {
+          "factor": "Hazardous sports or aviation",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider."
+        },
+        {
+          "factor": "Insurance Postponed within 2 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider."
+        },
+        {
+          "factor": "Suicide attempt within 2 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider."
+        },
+        {
+          "factor": "Suspended driver's license within 2 years",
+          "guideline": "Accepted for GIWL, EIWL, Deluxe Term, and Deluxe; declined for Premier Term and Provider."
+        }
+      ]
+    }
+  }
+} 

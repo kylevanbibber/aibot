@@ -1,0 +1,92 @@
+[
+  {
+    "id": "unitedhomelife_giwl",
+    "name": "GIWL (Guaranteed Issue Whole Life)",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 2500,
+    "coverage_max": 25000,
+    "premium_factor": 2.5,
+    "features": [
+      "Guaranteed issue whole life final expense",
+      "No medical exam—acceptance based on simplified disease questions",
+      "All applicants age 50–85 eligible unless specific disqualifying condition",
+      "Immediate full death benefit for eligible conditions"
+    ]
+  },
+  {
+    "id": "unitedhomelife_eiwl",
+    "name": "EIWL (Express Issue Whole Life)",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 2500,
+    "coverage_max": 25000,
+    "premium_factor": 2.5,
+    "features": [
+      "Express issue whole life final expense",
+      "No exam if no disqualifying condition within 12 months for core diseases",
+      "Simplified underwriting based on condition‐and‐timeframe matrix",
+      "Full death benefit once eligible, with possible rating for recent conditions"
+    ]
+  },
+  {
+    "id": "unitedhomelife_deluxbeterm",
+    "name": "Deluxe Term",
+    "type": "term_life",
+    "term_years": null,
+    "coverage_min": 50000,
+    "coverage_max": 250000,
+    "premium_factor": 1.5,
+    "features": [
+      "Simplified issue term life",
+      "Underwriting approval based on no treatment or diagnosis in past 2 years for most conditions",
+      "Coverage for ages 18–85 (subject to state approval)",
+      "Term renewable annually to age 85 with no additional exam"
+    ]
+  },
+  {
+    "id": "unitedhomelife_deluxe",
+    "name": "Deluxe (Permanent Whole Life)",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 10000,
+    "coverage_max": 250000,
+    "premium_factor": 2.5,
+    "features": [
+      "Permanent whole life final expense",
+      "Condition acceptance if treated >2 years ago for most impairments",
+      "Guaranteed level death benefit",
+      "No exam, simplified disease questionnaire"
+    ]
+  },
+  {
+    "id": "unitedhomelife_premierterm",
+    "name": "Premier Term",
+    "type": "term_life",
+    "term_years": null,
+    "coverage_min": 25000,
+    "coverage_max": 150000,
+    "premium_factor": 1.5,
+    "features": [
+      "Preferred‐class term life",
+      "Acceptance only if no disease treatment in past 5 years for major conditions",
+      "Simplified underwriting for ages 18–85",
+      "Renewable annually to age 85"
+    ]
+  },
+  {
+    "id": "unitedhomelife_provider",
+    "name": "Provider (Preferred Whole Life)",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 10000,
+    "coverage_max": 150000,
+    "premium_factor": 2.5,
+    "features": [
+      "Preferred‐class whole life final expense",
+      "High underwriting standards—only well‐controlled conditions >5 years accepted",
+      "No exam; physician statement may be required for ambiguous cases",
+      "Guaranteed level death benefit"
+    ]
+  }
+] 

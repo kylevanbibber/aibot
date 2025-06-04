@@ -1,0 +1,19 @@
+[
+  {
+    "id": "libertybankerslife_finalexpense",
+    "name": "Final Expense Whole Life",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 2500,
+    "coverage_max": 25000,
+    "premium_factor": 2.5,
+    "features": [
+      "Simplified‐issue final expense via telephone health questionnaire (Parts 1–3)",
+      "Height/weight build chart determines SIMPL Preferred, SIMPL Standard, or MWL (page 5)",
+      "No paramedical exam, APS, bloodwork, or labs—decision based solely on build chart and questionnaire",
+      "PreCheck® mobile tool (Rate Check, Rx Check, UW Check) available via smartphone for rapid risk assessment (pages 6–11)",
+      "Telephonic processing center (TPC) obtains complete phone interview; agent portal integration for e‐App or phone app (pages 11–15)",
+      "Riders available: Accidental Death & Dismemberment, Children's Term Rider, Grandchild Rider, Waiver of Premium (refer to rider insert in agent kit)"
+    ]
+  }
+] 

@@ -1,0 +1,42 @@
+{
+  "forestersfinancial_yourterm": {
+    "age_min": 18,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "forestersfinancial_advantageplusii": {
+    "age_min": 0,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "forestersfinancial_smartul": {
+    "age_min": 0,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "forestersfinancial_strongfoundation": {
+    "age_min": 18,
+    "age_max": 80,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "forestersfinancial_planrightwholelife": {
+    "age_min": 18,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  }
+} 

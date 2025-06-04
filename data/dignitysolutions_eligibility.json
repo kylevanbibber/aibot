@@ -1,0 +1,26 @@
+{
+  "dignitysolutions_immediate": {
+    "age_min": 50,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 0,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "dignitysolutions_graded": {
+    "age_min": 50,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 1,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "dignitysolutions_rop": {
+    "age_min": 50,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 3,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  }
+} 

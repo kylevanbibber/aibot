@@ -1,0 +1,399 @@
+{
+  "company_id": "americanhomelife",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "No build/height-weight chart is provided in this guide; underwriting is based purely on medical history and disease criteria.",
+      "tables": []
+    },
+    "medical_conditions": {
+      "description": "AHL Patriot Series classifies applicants into Preferred, Standard, Modified, or Decline based on specific medical conditions and time-frames since treatment or diagnosis.",
+      "conditions": [
+        {
+          "condition": "Activities of Daily Living (ADLs)",
+          "guideline": "If the applicant currently requires assistance with ADLs → Decline. If not currently requiring assistance → Standard.",
+          "rate_classes": ["Standard", "Decline"]
+        },
+        {
+          "condition": "AIDS / HIV",
+          "guideline": "Any history of medically treated or diagnosed AIDS/HIV → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Alcohol/Drug Abuse/Addiction",
+          "guideline": "Treated or counseled within the past 2 years → Modified. (No entry under Preferred/Standard/Decline for more remote history.)",
+          "rate_classes": ["Modified"]
+        },
+        {
+          "condition": "Alzheimer's Disease",
+          "guideline": "Any medically diagnosed Alzheimer's → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Amputation",
+          "guideline": "Amputation caused by accident → Preferred. Amputation due to disease or due to diabetes → Decline.",
+          "rate_classes": ["Preferred", "Decline"]
+        },
+        {
+          "condition": "Amyotrophic Lateral Sclerosis (ALS)",
+          "guideline": "Any medically diagnosed ALS → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Aneurysm",
+          "guideline": "Treated within 0–12 months → Modified. Treated 13–24 months ago → Standard. Treated ≥25 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Standard", "Modified"]
+        },
+        {
+          "condition": "Angina (Chest Pain)",
+          "guideline": "Treated within 0–12 months → Modified. Treated 13–24 months ago → Standard. Treated 24–36 months ago → Modified. (No Preferred slot.)",
+          "rate_classes": ["Standard", "Modified"]
+        },
+        {
+          "condition": "Angioplasty (Stent)",
+          "guideline": "Treated within 0–12 months → Modified. Treated 13–24 months ago → Standard. Treated 24–36 months ago → Modified.",
+          "rate_classes": ["Standard", "Modified"]
+        },
+        {
+          "condition": "Arrhythmia",
+          "guideline": "Any medically treated or diagnosed arrhythmia → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Atrial Fibrillation",
+          "guideline": "Any medically treated or diagnosed atrial fibrillation → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Basal Cell Skin Cancer",
+          "guideline": "Any history of medically treated or diagnosed basal cell skin cancer → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Bed Confinement",
+          "guideline": "Currently confined to a bed → Decline. Not currently confined (but history of confinement) → Standard.",
+          "rate_classes": ["Standard", "Decline"]
+        },
+        {
+          "condition": "Bipolar Disorder",
+          "guideline": "Any history of bipolar disorder → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Bone Marrow Transplant",
+          "guideline": "Any history of bone marrow transplant → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Cancer",
+          "guideline": "Recurrent cancer or currently active cancer → Decline. Medically diagnosed/treated 0–24 months ago (and cured) → Modified. Medically diagnosed/treated ≥24 months ago (and cured) → Standard.",
+          "rate_classes": ["Standard", "Modified", "Decline"]
+        },
+        {
+          "condition": "Cardiomyopathy",
+          "guideline": "Treated within 0–12 months → Modified. Treated 13–24 months ago → Standard. Treated ≥25 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Standard", "Modified"]
+        },
+        {
+          "condition": "Catheterization (Heart)",
+          "guideline": "Within past 0–12 months → Modified. Within past 13–24 months → Standard. More than 25 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Standard", "Modified"]
+        },
+        {
+          "condition": "Chronic Bronchitis",
+          "guideline": "Diagnosed/treated 0–24 months ago → Standard. Diagnosed/treated 24–36 months ago → Modified. Diagnosed/treated ≥37 months ago → Standard.",
+          "rate_classes": ["Standard", "Modified"]
+        },
+        {
+          "condition": "Chronic Kidney Disease/Nephropathy",
+          "guideline": "Diagnosed/treated 0–24 months ago → Modified. Diagnosed/treated ≥25 months ago → Standard.",
+          "rate_classes": ["Standard", "Modified"]
+        },
+        {
+          "condition": "Chronic Obstructive Pulmonary Disease (COPD)",
+          "guideline": "Diagnosed/treated 0–24 months ago → Modified. Diagnosed/treated 24–36 months ago → Standard. Diagnosed/treated ≥37 months ago → Modified.",
+          "rate_classes": ["Standard", "Modified"]
+        },
+        {
+          "condition": "Chronic Pancreatitis",
+          "guideline": "Diagnosed/treated within past 2 years → Preferred.",
+          "rate_classes": ["Preferred"]
+        },
+        {
+          "condition": "Circulatory Surgery",
+          "guideline": "Surgery within past 0–12 months → Modified. Within 13–24 months → Standard. Within 24–36 months → Modified. ≥37 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Standard", "Modified"]
+        },
+        {
+          "condition": "Cirrhosis of the Liver",
+          "guideline": "Any history of cirrhosis of the liver → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Congestive Heart Failure",
+          "guideline": "Any history of CHF → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Covid-19",
+          "guideline": "Oxygen required within past 12 months → Decline. Oxygen required 13+ months ago (with ongoing inhaler/nebulizer treatment) → Standard. No oxygen or ongoing inhaler/nebulizer treatment → Preferred.",
+          "rate_classes": ["Preferred", "Standard", "Decline"]
+        },
+        {
+          "condition": "Diabetes (Type II)",
+          "guideline": "Diagnosed ≥20 years ago → Preferred. Insulin use prior to age 50 → Standard. Currently controlled with insulin use → Preferred.",
+          "rate_classes": ["Preferred", "Standard"]
+        },
+        {
+          "condition": "Diabetic Complications",
+          "guideline": "Insulin shock/diabetic coma in last 24 months → Modified. Insulin shock/diabetic coma ≥25 months ago → Preferred. Retinopathy in last 24 months → Modified. Retinopathy ≥25 months ago → Preferred. Nephropathy or Neuropathy in last 24 months → Modified. Nephropathy/Neuropathy ≥25 months ago → Preferred. Amputation due to diabetes → Decline.",
+          "rate_classes": ["Preferred", "Modified", "Decline"]
+        },
+        {
+          "condition": "Defibrillator",
+          "guideline": "Any history of defibrillator placement → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Dementia",
+          "guideline": "Any medically diagnosed dementia → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Diagnostic Testing/Surgery/Hospitalization",
+          "guideline": "Recommended within past 0–12 months (no results) → Decline. Recommended within past 13–24 months (no results) → Standard. Recommended ≥25 months ago (no results) → Standard.",
+          "rate_classes": ["Standard", "Decline"]
+        },
+        {
+          "condition": "Emphysema",
+          "guideline": "Diagnosed/treated 0–24 months ago → Standard. Diagnosed/treated 24–36 months ago → Standard. Diagnosed/treated ≥37 months ago → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Heart Attack",
+          "guideline": "Heart attack within past 0–12 months → Modified. 13–24 months ago → Standard. 25–36 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Standard", "Modified"]
+        },
+        {
+          "condition": "Heart Defect",
+          "guideline": "Ever medically diagnosed but not surgically repaired → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Heart Surgery",
+          "guideline": "Surgery within past 0–12 months → Modified. 13–24 months ago → Standard. 25–36 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Standard", "Modified"]
+        },
+        {
+          "condition": "Hepatitis (Chronic)",
+          "guideline": "Diagnosed/treated 0–24 months ago → Modified. 24–36 months ago → Preferred. ≥37 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Modified"]
+        },
+        {
+          "condition": "Hepatitis (Any/Acute)",
+          "guideline": "Diagnosed/treated 0–24 months ago → Modified. 24–36 months ago → Preferred. ≥37 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Modified"]
+        },
+        {
+          "condition": "Home Health Care",
+          "guideline": "Currently receiving → Decline. Not currently receiving or advised to receive → Preferred.",
+          "rate_classes": ["Preferred", "Decline"]
+        },
+        {
+          "condition": "Hospice Care",
+          "guideline": "Currently receiving hospice care → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Hospitalization/Nursing Facility",
+          "guideline": "Currently hospitalized or confined → Decline. Not currently hospitalized/advised → Preferred.",
+          "rate_classes": ["Preferred", "Decline"]
+        },
+        {
+          "condition": "Huntington's Disease",
+          "guideline": "Any medically treated or diagnosed Huntington's → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Kidney Dialysis",
+          "guideline": "Any history of dialysis or advised to have → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Kidney Disease/Insufficiency",
+          "guideline": "Diagnosed/treated 0–24 months ago → Modified. Diagnosed/treated ≥25 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Modified"]
+        },
+        {
+          "condition": "Kidney Failure",
+          "guideline": "Treated other than dialysis in last 24 months → Modified. Treated for dialysis in last 12 months → Decline.",
+          "rate_classes": ["Modified", "Decline"]
+        },
+        {
+          "condition": "Liver Disease",
+          "guideline": "Diagnosed/treated 0–24 months ago → Modified. 24–36 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Modified"]
+        },
+        {
+          "condition": "Liver Failure",
+          "guideline": "Any history of liver failure → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Lupus",
+          "guideline": "Any history of lupus → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Mental Incapacity",
+          "guideline": "Any history of mental incapacity → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Multiple Sclerosis",
+          "guideline": "Any history of multiple sclerosis → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Muscular Dystrophy",
+          "guideline": "Any history of muscular dystrophy → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Nervous Disorder (Hospitalized For)",
+          "guideline": "Hospitalized for a nervous disorder within past 24 months → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Nicotine Use",
+          "guideline": "No nicotine or tobacco within 12 months → Non-Smoker (Preferred). Any other tobacco/nicotine use (including cigarettes, cigars, pipe) within 12 months → Smoker (Standard/Modified).",
+          "rate_classes": ["Preferred", "Standard", "Modified", "Decline"]
+        },
+        {
+          "condition": "Organ Transplant",
+          "guideline": "Any history of organ transplant → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Oxygen",
+          "guideline": "Used oxygen within last 12 months (even if not currently) → Decline. Used oxygen 13–24 months ago → Standard.",
+          "rate_classes": ["Standard", "Decline"]
+        },
+        {
+          "condition": "Pacemaker",
+          "guideline": "Inserted 0–12 months ago → Modified. 13–24 months ago → Standard. 25–36 months ago → Modified. ≥37 months ago → Modified or Preferred (table shows X in Preferred for ≥37 months).",
+          "rate_classes": ["Preferred", "Standard", "Modified"]
+        },
+        {
+          "condition": "Paralysis",
+          "guideline": "If no help needed with ADLs despite paralysis → Preferred. Otherwise, decline language not shown explicitly.",
+          "rate_classes": ["Preferred"]
+        },
+        {
+          "condition": "Parkinson's Disease",
+          "guideline": "Any history of Parkinson's → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Schizophrenia",
+          "guideline": "Any history of schizophrenia → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Seizures",
+          "guideline": "Medically diagnosed/treated within 3 years → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Stroke / Transient Ischemic Attack (TIA)",
+          "guideline": "Treated 0–12 months ago → Modified. 13–24 months ago → Standard. 25–36 months ago → Preferred. ≥37 months ago → Preferred.",
+          "rate_classes": ["Preferred", "Standard", "Modified"]
+        },
+        {
+          "condition": "Terminal Illness",
+          "guideline": "Any medically diagnosed or treated terminal illness (life expectancy ≤12 months) → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Ulcerative Colitis",
+          "guideline": "Diagnosed/treated within past 3 years → Standard.",
+          "rate_classes": ["Standard"]
+        },
+        {
+          "condition": "Wheelchair/Scooter Use",
+          "guideline": "Current wheelchair use not due to disease → Standard. Current wheelchair use due to disease (not accident) → Decline.",
+          "rate_classes": ["Standard", "Decline"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "No laboratory, blood, or paramedical exam requirements are specified—this guide assumes a fully simplified issue final expense model based solely on disease history.",
+      "tables": []
+    },
+    "risk_classes": {
+      "description": "Rate classifications are exactly the four columns shown: Preferred, Standard, Modified, and Decline.  Each condition/time-frame combination maps to one or more of these four risk classes.",
+      "classes": [
+        {
+          "name": "Preferred",
+          "criteria": [
+            "No disqualifying medical conditions in the past specified time-frames (e.g., no active cancer within 24 months, no oxygen use in past 13 months, etc.)",
+            "No ongoing ADL dependency",
+            "No recent heart surgery (past 25+ months acceptable)",
+            "No insulin-dependent diabetes with complications in last 24 months",
+            "No current wheelchair use due to disease"
+          ]
+        },
+        {
+          "name": "Standard",
+          "criteria": [
+            "Certain conditions treated at least 13–24 months ago (e.g., aneurysm, COPD, cardiac catheterization)",
+            "No terminal or end-stage disease within last 12 months",
+            "Controlled diabetes diagnosed ≥20 years ago or currently controlled with insulin",
+            "No oxygen use in past 13–24 months",
+            "No active substance abuse in past 2 years"
+          ]
+        },
+        {
+          "name": "Modified",
+          "criteria": [
+            "Condition treated within past 0–12 or 0–24 months (e.g., cardiac surgery, COPD, hepatitis, diabetic complications)",
+            "Active but non-terminal conditions (e.g., pneumonia, cirrhosis, chronic pancreatitis) treated within past 24 months",
+            "Pacemaker inserted 0–12 or 25–36 months ago",
+            "Any diagnostic testing/surgery/hospitalization recommended in past 0–24 months with no follow-up results"
+          ]
+        },
+        {
+          "name": "Decline",
+          "criteria": [
+            "Terminal illness (life expectancy ≤12 months)",
+            "ALS, Alzheimer's, dementia, or Huntington's disease at any time",
+            "Active oxygen use within past 12 months",
+            "AIDS/HIV at any time",
+            "Recent heart attack (within 0–12 months) or CHF at any time",
+            "Any dialysis, kidney transplant, or end-stage renal disease"
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "Nicotine use (cigarettes, pipes, cigars, chewing tobacco, vaping) within the past 12 months classifies the applicant as a Smoker (Standard/Modified). Occasional cigar/pipe use (≤12/year) or nicotine substitutes do not automatically decline but follow the same smoker classification. No nicotine/tobacco in past 12 months qualifies for Non-Smoker (Preferred).",
+      "classifications": [
+        {
+          "type": "Non-Smoker (Preferred)",
+          "classification": "No nicotine or tobacco use in the past 12 months; occasional cigar/pipe use (≤12/year) allowed if negative cotinine."
+        },
+        {
+          "type": "Smoker (Standard/Modified)",
+          "classification": "Any nicotine or tobacco use in past 12 months (including cigarettes, cigars, pipe, chewing tobacco, vaping)."
+        }
+      ]
+    },
+    "financial_underwriting": {
+      "description": "Not addressed in this guide.  Coverage is final expense—face amounts are small enough that no income verification or financial multiples are required.",
+      "income_multiples": []
+    },
+    "special_considerations": {
+      "description": "Beyond disease criteria, there are no additional factors (e.g., occupation, travel) specified in this guide.  Eligibility is determined solely by the conditions table above.",
+      "factors": []
+    }
+  }
+} 

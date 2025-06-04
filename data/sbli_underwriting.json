@@ -1,0 +1,237 @@
+{
+  "company_id": "sbli",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "No height/weight build chart is provided; underwriting relies on simplified issue questions and BMI rules.",
+      "tables": []
+    },
+    "medical_conditions": {
+      "description": "Applicants with certain medical histories or recent diagnoses are declined. Conditions are evaluated by type, recency, and severity.",
+      "conditions": [
+        {
+          "condition": "Major Depression or Mood Disorders",
+          "guideline": "Any treatment requiring ≥3 medications or leading to work loss or psychiatrist visits within the past 5 years → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Bipolar Depression, Schizophrenia, Suicidal Ideation or Attempt",
+          "guideline": "Any history within the past 5 years → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Diabetes Requiring Insulin",
+          "guideline": "If age < 40 any insulin use → Decline; age ≥ 40 with A1C > 7% → Decline; otherwise considered case-by-case but generally Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Asthma",
+          "guideline": "Asthma (excluding seasonal allergies) requiring any hospital, ER, or immediate care visit within last 5 years → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Emphysema or COPD",
+          "guideline": "Any history of emphysema or COPD → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Heart Disease (e.g., heart attack, surgery, CAD, valve disease, irregular heartbeat, CHF, cardiomyopathy)",
+          "guideline": "Any diagnosis, treatment, hospitalization, or surgery for a heart condition within the past 5 years → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Vascular Disease (e.g., cerebrovascular disease, stroke/TIA, peripheral vascular disease)",
+          "guideline": "Any diagnosis or treatment within the past 5 years → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Chronic Kidney Disease",
+          "guideline": "Any history of chronic kidney disease → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Liver Cirrhosis, Chronic Hepatitis, or Pancreatic Disease",
+          "guideline": "Any history of these conditions → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Neurological Diseases (e.g., ALS, Alzheimer's, Parkinson's, dementia, Huntington's)",
+          "guideline": "Any history of these degenerative neurological conditions → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Seizure/Epilepsy (excluding simple/partial or petit mal)",
+          "guideline": "Any seizure disorder beyond simple/partial or petit mal within past 5 years → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Connective Tissue Diseases (e.g., rheumatoid arthritis, lupus)",
+          "guideline": "Any connective tissue disease requiring ongoing steroids or immunosuppressants within past 5 years → Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Inflammatory Bowel Disease (e.g., ulcerative colitis, Crohn's) with hospitalization or ER visits in last 2 years",
+          "guideline": "Any such event within 2 years → Decline.",
+          "rate_classes": ["Decline"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "No labs, bloodwork, or paramedical exams are required—underwriting is fully simplified issue.",
+      "tables": []
+    },
+    "risk_classes": {
+      "description": "Risk classification is determined by nicotine use and overall simplified issue responses. Non-nicotine applicants may qualify for Elite, Preferred, Select, or Standard; nicotine users are generally Standard up to Table D substandard.",
+      "classes": [
+        {
+          "name": "Elite (Non-Nicotine)",
+          "criteria": [
+            "Non-smoker (no nicotine use) ≤ BMI ≤ 42 and ≥ 17",
+            "No disqualifying medical conditions as listed",
+            "No recent hospitalizations or surgeries outside allowed exceptions",
+            "No adverse financial or criminal history",
+            "Age and face amount within eligible bands"
+          ]
+        },
+        {
+          "name": "Preferred (Non-Nicotine)",
+          "criteria": [
+            "Non-smoker, BMI between 17 and 42",
+            "No major medical conditions within past 5 years (per list)",
+            "No hazardous avocations or criminal history",
+            "Meets simplified issue income and employment criteria"
+          ]
+        },
+        {
+          "name": "Select (Non-Nicotine)",
+          "criteria": [
+            "Non-smoker, BMI between 17 and 42",
+            "Minor medical history outside Decline conditions (e.g., well-controlled hypertension not requiring hospitalization)",
+            "No disqualifying lifestyle risks",
+            "Income/employment and age criteria met"
+          ]
+        },
+        {
+          "name": "Standard (Non-Nicotine)",
+          "criteria": [
+            "Non-smoker, BMI between 17 and 42",
+            "May have a more complex but non-declinable medical history (e.g., minor surgery >2 years ago)",
+            "No disqualifying lifestyle risks",
+            "Income/employment and age criteria met"
+          ]
+        },
+        {
+          "name": "Standard (Nicotine)",
+          "criteria": [
+            "Any nicotine use within past 12 months",
+            "BMI between 17 and 42",
+            "No disqualifying medical or lifestyle conditions (as listed)",
+            "Income and age eligibility met"
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "Nicotine use (cigarettes, cigars, pipe, chewing tobacco, vaping) within the past 12 months routes all applicants into the Standard (Nicotine) risk class. Occasional marijuana use must be ≤4 times/week or ≤16 times/month—heavier use → Decline.",
+      "classifications": [
+        {
+          "type": "Non-Nicotine",
+          "classification": "Eligible for Elite, Preferred, Select, or Standard (Non-Nicotine) depending on overall profile."
+        },
+        {
+          "type": "Nicotine",
+          "classification": "All nicotine users (past 12 months) are classified as Standard (Nicotine) up to Table D substandard."
+        },
+        {
+          "type": "Marijuana (Recreational)",
+          "classification": "Recreational use >4×/week or >16×/month → Decline; otherwise follows Nicotine classification."
+        }
+      ]
+    },
+    "financial_underwriting": {
+      "description": "Income multiples determine maximum face amount eligibility. No financial docs are required at sale, but the system enforces income-based limits.",
+      "income_multiples": [
+        { "age_range": "18–40", "income_multiple": "≤ 20× annual income (max $1 million)" },
+        { "age_range": "41–50", "income_multiple": "≤ 15× annual income (max $1 million)" },
+        { "age_range": "51–60", "income_multiple": "≤ 10× annual income (max $500,000)" },
+        { "age_range": "61–65", "income_multiple": "≤ 10× annual income (max $500,000)" }
+      ]
+    },
+    "special_considerations": {
+      "description": "Certain lifestyle or situational factors automatically decline or require manual underwriting. These include extreme BMI, recent surgery, adverse financial or criminal history, military service in conflict zones, and hazardous activities.",
+      "factors": [
+        {
+          "factor": "BMI Outside 17–42",
+          "guideline": "BMI > 42 or < 17 → Decline."
+        },
+        {
+          "factor": "Recent Significant Weight Change",
+          "guideline": "Weight change > 10 lbs in last 12 months due to anything other than diet/exercise or pregnancy → Decline."
+        },
+        {
+          "factor": "Surgery (Excluding Minor) within 2 Years",
+          "guideline": "Any major surgery (other than bone/joint/ligament/tendon repair, cosmetic, C-section/D&C, dental, gallbladder, hemorrhoid, tonsil/adenoid, vision/hearing, varicose veins, vasectomy) within 2 years → Decline."
+        },
+        {
+          "factor": "Disability Claim < 2 Years Ago",
+          "guideline": "Any disability claim (excluding short-term disability, military, childbirth) within past 2 years, or missed > 7 months of work → Decline."
+        },
+        {
+          "factor": "Awaiting Test Results Excluding HIV/Allergy/Pregnancy/Fertility (Past 2 Years)",
+          "guideline": "Any pending significant test results (except HIV, allergy, pregnancy, fertility) within past 2 years → Decline."
+        },
+        {
+          "factor": "Cancer (Excluding Basal/Squamous Skin Carcinoma) within 10 Years",
+          "guideline": "Any cancer diagnosis or treatment (other than basal or squamous skin carcinoma) within past 10 years → Decline."
+        },
+        {
+          "factor": "HIV/AIDS (Any Time)",
+          "guideline": "Any history of HIV/AIDS → Decline."
+        },
+        {
+          "factor": "Hospitalization (Any Treatment) within 1 Year",
+          "guideline": "Any hospitalization for treatment within past 12 months (excluding routine childbirth) → Decline."
+        },
+        {
+          "factor": "Alcohol Usage > 20 Drinks/Week",
+          "guideline": "Excessive alcohol use (as defined) → Decline."
+        },
+        {
+          "factor": "Daily Marijuana > 4×/Week or > 16×/Month",
+          "guideline": "Heavy marijuana use → Decline; otherwise treated as Nicotine risk class."
+        },
+        {
+          "factor": "Active Military (Deployed/Reserve Under Alert)",
+          "guideline": "Active duty or reserve under alert/conflict → Decline."
+        },
+        {
+          "factor": "Illicit Drug Use (Excluding Marijuana)",
+          "guideline": "Any non-medical opioid, barbiturate, amphetamine, hallucinogen, heroin, cocaine, or other illegal drug use → Decline."
+        },
+        {
+          "factor": "Recommended Treatment for Alcohol/Drug Use (Past 7 Years)",
+          "guideline": "Any professional recommendation for treatment within past 7 years → Decline."
+        },
+        {
+          "factor": "Felony Conviction/Parole (Last 10 Years)",
+          "guideline": "Felony conviction or parole currently or within past 10 years → Decline."
+        },
+        {
+          "factor": "DUI/DWI or Reckless Driving (Last 5 Years)",
+          "guideline": "DUI/DWI or license suspension/revocation within past 5 years → Decline."
+        },
+        {
+          "factor": "High-Risk Activities (Past 2 Years)",
+          "guideline": "Motor vehicle racing, private aircraft piloting, skydiving within past 2 years → Decline."
+        },
+        {
+          "factor": "Scuba Diving > 100 ft (Past 2 Years)",
+          "guideline": "Any scuba diving deeper than 100 ft within past 2 years → Decline."
+        },
+        {
+          "factor": "Rock Climbing > 13,000 ft Without Safety Equipment (Past 2 Years)",
+          "guideline": "Any such exposure → Decline."
+        }
+      ]
+    }
+  }
+} 

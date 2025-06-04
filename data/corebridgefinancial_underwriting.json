@@ -1,0 +1,619 @@
+{
+  "company_id": "corebridgefinancial",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "Corebridge's SimpliNow Legacy uses a unisex height/weight chart (imperial units) to determine eligibility for two death-benefit designs: SimpliNow Legacy (Graded) and SimpliNow Legacy Max (Level). Any weight below the "Min. Weight" or above the "Max. Weight" for the chosen design results in automatic decline.",
+      "tables": [
+        {
+          "title": "SimpliNow Legacy vs. SimpliNow Legacy Max Build Chart",
+          "measurement_unit": "imperial (height in feet/inches; weight in pounds)",
+          "columns": [
+            "Height",
+            "SimpliNow Legacy Min. Weight",
+            "SimpliNow Legacy Max. Weight",
+            "SimpliNow Legacy Max Min. Weight",
+            "SimpliNow Legacy Max Max. Weight"
+          ],
+          "rows": [
+            ["4'8\"", 74, 203, 79, 189],
+            ["4'9\"", 77, 210, 81, 196],
+            ["4'10\"", 79, 217, 84, 203],
+            ["4'11\"", 82, 225, 87, 210],
+            ["5'0\"", 85, 232, 90, 217],
+            ["5'1\"", 88, 240, 93, 224],
+            ["5'2\"", 91, 248, 96, 232],
+            ["5'3\"", 94, 256, 99, 239],
+            ["5'4\"", 97, 265, 103, 247],
+            ["5'5\"", 100, 273, 106, 255],
+            ["5'6\"", 103, 281, 109, 263],
+            ["5'7\"", 106, 290, 112, 271],
+            ["5'8\"", 109, 299, 116, 279],
+            ["5'9\"", 112, 307, 119, 287],
+            ["5'10\"", 116, 316, 123, 296],
+            ["5'11\"", 119, 326, 126, 304],
+            ["6'0\"", 122, 335, 130, 313],
+            ["6'1\"", 126, 344, 133, 321],
+            ["6'2\"", 129, 354, 137, 330],
+            ["6'3\"", 133, 363, 141, 339],
+            ["6'4\"", 136, 373, 145, 348],
+            ["6'5\"", 140, 383, 148, 358],
+            ["6'6\"", 144, 393, 152, 367],
+            ["6'7\"", 147, 403, 156, 376],
+            ["6'8\"", 151, 413, 160, 386],
+            ["6'9\"", 155, 424, 164, 396],
+            ["6'10\"", 159, 434, 168, 406]
+          ]
+        }
+      ]
+    },
+    "medical_conditions": {
+      "description": "Each medical condition is assigned one of three possible decisions—Level (full face), Graded (graded death benefit), or Decline—based on recency, severity, and tobacco status. If multiple conditions apply, the worst decision applies. Combinations of conditions (e.g., MI plus stroke) may result in decline even if individually graded.",
+      "conditions": [
+        {
+          "condition": "Alzheimer's or Dementia",
+          "guideline": "Any history of Alzheimer's or dementia.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Arthritis (Rheumatoid or Psoriatic)",
+          "guideline": "Diagnosed or treated within last 48 months without complicating factors.",
+          "rate_classes": ["Level"]
+        },
+        {
+          "condition": "Blood Condition – Myelodysplastic Syndrome (MDS)",
+          "guideline": "Any history of MDS.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Bone Marrow Transplant",
+          "guideline": "Any history of bone marrow transplant.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Brain Aneurysm",
+          "guideline": [
+            "Less than 6 months ago → Decline",
+            "6–24 months ago with surgical repair → Level",
+            "6–24 months ago without surgical repair → Graded"
+          ],
+          "rate_classes": ["Decline", "Level", "Graded"]
+        },
+        {
+          "condition": "Brain Disease / Spinal Cord Disease / Nervous System Disease or Disorder",
+          "sub_conditions": [
+            {
+              "name": "Huntington's Disease",
+              "guideline": "Any history → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Lou Gehrig's Disease (ALS)",
+              "guideline": "Any history → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Multiple Sclerosis",
+              "guideline": "Any history → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Parkinson's Disease",
+              "guideline": "Any history → Graded",
+              "rate_classes": ["Graded"]
+            }
+          ]
+        },
+        {
+          "condition": "Cancer",
+          "sub_conditions": [
+            {
+              "name": "Bladder Cancer",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Bone Cancer",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Brain Cancer",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Breast Cancer (Stage I)",
+              "guideline": "Within last 48 months → Level",
+              "rate_classes": ["Level"]
+            },
+            {
+              "name": "Breast Cancer (Stage II)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Carcinoid or Neuroendocrine Tumor",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Cervical Cancer (Stage I)",
+              "guideline": "Within last 48 months → Level",
+              "rate_classes": ["Level"]
+            },
+            {
+              "name": "Cervical Cancer (Stage II)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Colon/Rectum/Anus Cancer (Stage I)",
+              "guideline": "Within last 48 months → Level",
+              "rate_classes": ["Level"]
+            },
+            {
+              "name": "Colon/Rectum/Anus Cancer (Stage II)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Endometrial (Uterine) Cancer (Stage I)",
+              "guideline": "Within last 48 months → Level",
+              "rate_classes": ["Level"]
+            },
+            {
+              "name": "Endometrial (Uterine) Cancer (Stage II)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Esophageal Cancer",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Head or Neck Cancer",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Kidney or Ureter Cancer (Stage I)",
+              "guideline": "Within last 48 months → Level",
+              "rate_classes": ["Level"]
+            },
+            {
+              "name": "Kidney or Ureter Cancer (Stage II)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Leukemia",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Liver Cancer",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Lung Cancer",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Lymphoma",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Melanoma (Stage I)",
+              "guideline": "Within last 48 months → Level",
+              "rate_classes": ["Level"]
+            },
+            {
+              "name": "Melanoma (Stage II)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Metastatic or Recurrent Cancer (Stage III or IV)",
+              "guideline": "Any history → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Multiple Myeloma",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Ovarian Cancer",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Pancreatic Cancer",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Prostate Cancer (Stage I)",
+              "guideline": "Within last 48 months → Level",
+              "rate_classes": ["Level"]
+            },
+            {
+              "name": "Prostate Cancer (Stage II)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Sarcoma",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Small Intestine Cancer",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Stomach Cancer",
+              "guideline": "Within last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Testicular Cancer (Stage I)",
+              "guideline": "Within last 48 months → Level",
+              "rate_classes": ["Level"]
+            },
+            {
+              "name": "Testicular Cancer (Stage II)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Thyroid Cancer (Stage I)",
+              "guideline": "Within last 48 months → Level",
+              "rate_classes": ["Level"]
+            },
+            {
+              "name": "Thyroid Cancer (Stage II)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Other Cancer (Not Listed)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            }
+          ]
+        },
+        {
+          "condition": "Connective Tissue Disorder – Scleroderma/Systemic Sclerosis",
+          "guideline": "Diagnosed or treated within last 48 months → Graded",
+          "rate_classes": ["Graded"]
+        },
+        {
+          "condition": "Declined for Life Insurance",
+          "guideline": "Unauthorised decline within last 12 months by any insurer → Decline",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Diabetic, Diabetes or Complications from Diabetes",
+          "guideline": [
+            "Amputation due to diabetic complications → Decline",
+            "If A1C ≤ 8.6: on insulin → Graded; not on insulin → Level",
+            "If A1C 8.7–9.9 → Graded",
+            "If A1C ≥ 10 → Decline",
+            "Hospitalization due to diabetes within last 24 months → Decline",
+            "If also had stroke or coronary disease → Decline"
+          ],
+          "rate_classes": ["Level", "Graded", "Decline"]
+        },
+        {
+          "condition": "Drug Abuse, Alcohol Abuse or Substance Abuse",
+          "guideline": [
+            "Narcotics without prescription (amphetamines, hallucinogens, heroin, cocaine) within last 24 months → Decline",
+            "Any other substance abuse (alcohol or drugs) within last 24 months → Graded"
+          ],
+          "rate_classes": ["Graded", "Decline"]
+        },
+        {
+          "condition": "Felony, DUI, Arrested, Incarcerated",
+          "guideline": [
+            "Driving while impaired/intoxicated or under influence within last 24 months → Decline",
+            "Felony within last 24 months → Decline",
+            "Currently incarcerated → Decline"
+          ],
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Heart Medical History, TIA, or Strokes",
+          "sub_conditions": [
+            {
+              "name": "Angina Treated with Medication",
+              "guideline": [
+                "Within last 24 months & non-tobacco → Level",
+                "Within last 24 months & tobacco → Graded",
+                "Within last 6 months → Decline"
+              ],
+              "rate_classes": ["Level", "Graded", "Decline"]
+            },
+            {
+              "name": "Atrial Fibrillation or Irregular Heart Rhythm",
+              "guideline": [
+                "If diagnosed with chronic AFib in last 24 months → Graded",
+                "Else if on daily anticoagulant (e.g., Xarelto, Eliquis, Coumadin) → Level",
+                "Else (not on anticoagulant) → Graded"
+              ],
+              "rate_classes": ["Level", "Graded"]
+            },
+            {
+              "name": "Coronary Artery Disease with Angioplasty/Stenting",
+              "guideline": [
+                "Within last 24 months & non-tobacco → Level",
+                "Within last 24 months & tobacco → Graded",
+                "Within last 6 months → Decline"
+              ],
+              "rate_classes": ["Level", "Graded", "Decline"]
+            },
+            {
+              "name": "Coronary Artery Disease with Bypass Grafting",
+              "guideline": [
+                "Within last 24 months & non-tobacco → Level",
+                "Within last 24 months & tobacco → Graded",
+                "Within last 6 months → Decline"
+              ],
+              "rate_classes": ["Level", "Graded", "Decline"]
+            },
+            {
+              "name": "Myocardial Infarction (Heart Attack)",
+              "guideline": [
+                "Within last 24 months & non-tobacco → Level",
+                "Within last 24 months & tobacco → Graded",
+                "Within last 6 months → Decline"
+              ],
+              "rate_classes": ["Level", "Graded", "Decline"]
+            },
+            {
+              "name": "Recurrent Episodes of TIA",
+              "guideline": "Any history → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Stroke",
+              "guideline": [
+                "Within last 12 months → Decline",
+                "Within last 24 months → Graded"
+              ],
+              "rate_classes": ["Decline", "Graded"]
+            },
+            {
+              "name": "Transient Ischemic Attack (TIA)",
+              "guideline": "Within last 6 months → Decline",
+              "rate_classes": ["Decline"]
+            }
+          ]
+        },
+        {
+          "condition": "HIV, AIDS, ARC",
+          "guideline": "Any history → Decline",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Kidney, Renal, or Dialysis",
+          "sub_conditions": [
+            {
+              "name": "Advanced or End-Stage Renal Disease or need for dialysis",
+              "guideline": "Any history → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Chronic Kidney Disease (including chronic renal insufficiency)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            }
+          ]
+        },
+        {
+          "condition": "Liver",
+          "sub_conditions": [
+            {
+              "name": "Hepatitis B",
+              "guideline": "Any history → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Liver Cirrhosis",
+              "guideline": "Any history → Decline",
+              "rate_classes": ["Decline"]
+            }
+          ]
+        },
+        {
+          "condition": "Lung Disease, COPD, Chronic Bronchitis",
+          "sub_conditions": [
+            {
+              "name": "Chronic Bronchitis (Chronic Cough)",
+              "guideline": "Hospitalized > once in last 24 months → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Chronic Obstructive Pulmonary Disease (COPD) – Hospitalized > once in last 24 months",
+              "guideline": "→ Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Chronic Obstructive Pulmonary Disease (COPD) – Not hospitalized in last 24 months, non-tobacco user",
+              "guideline": "→ Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Chronic Obstructive Pulmonary Disease (COPD) – Tobacco user",
+              "guideline": "→ Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Emphysema – Hospitalized > once in last 24 months",
+              "guideline": "→ Decline",
+              "rate_classes": ["Decline"]
+            }
+          ]
+        },
+        {
+          "condition": "Lupus",
+          "guideline": "Within last 48 months → Graded",
+          "rate_classes": ["Graded"]
+        },
+        {
+          "condition": "Mental Illness, Suicide Attempts, or Mental Incapacity",
+          "sub_conditions": [
+            {
+              "name": "Bipolar Disorder (Manic-Depressive Disorder)",
+              "guideline": "Within last 48 months → Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Mental Incapacity",
+              "guideline": "Any history → Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Psychotic Event – Hospitalized in last 36 months",
+              "guideline": "→ Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Schizophrenia – Hospitalized in last 36 months",
+              "guideline": "→ Decline",
+              "rate_classes": ["Decline"]
+            },
+            {
+              "name": "Schizophrenia – Any history",
+              "guideline": "→ Graded",
+              "rate_classes": ["Graded"]
+            },
+            {
+              "name": "Suicide Attempt",
+              "guideline": "Any history → Decline",
+              "rate_classes": ["Decline"]
+            }
+          ]
+        },
+        {
+          "condition": "Muscle Diseases – Dermatomyositis",
+          "guideline": "Within last 48 months → Graded",
+          "rate_classes": ["Graded"]
+        },
+        {
+          "condition": "Organ Transplant",
+          "guideline": "Any history → Decline",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Weight Loss – Unexplained (>10 lbs)",
+          "guideline": "Within last 12 months → Graded",
+          "rate_classes": ["Graded"]
+        },
+        {
+          "condition": "Wheelchair Dependent / Electric Scooter Dependent / Bedridden / Nursing Home / Hospice / ADL Assistance",
+          "guideline": "Any current need → Decline",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Other – Require Oxygen (other than for sleep apnea)",
+          "guideline": "Any current use → Decline",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Sickle Cell Anemia",
+          "guideline": "Any history → Decline",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Terminal Illness or Terminal Health Conditions (expected death within 12 months)",
+          "guideline": "Any current diagnosis → Decline",
+          "rate_classes": ["Decline"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "No laboratory tests, bloodwork, or paramedical exam requirements are specified—SimpliNow underwriting is fully simplified issue, relying solely on the height/weight build chart and the medical questionnaire (Conditions page 4–7).",
+      "tables": []
+    },
+    "risk_classes": {
+      "description": "SimpliNow Legacy offers two final-expense whole life death-benefit designs (Graded and Level) plus the automatic Decline outcome. Applicants are routed based on their medical profile and build-chart placement.",
+      "classes": [
+        {
+          "name": "SimpliNow Legacy Max (Level Death Benefit)",
+          "criteria": [
+            "Height/weight within the "Min. – Max." columns of the Legacy Max build chart (page 8)",
+            "Medical history yields a "Level" decision for all listed conditions (page 4–7)",
+            "Age 50–80, can be up to $25,000 face amount (inferred industry standard)"
+          ]
+        },
+        {
+          "name": "SimpliNow Legacy (Graded Death Benefit)",
+          "criteria": [
+            "Height/weight within the "Min. – Max." columns of the Legacy Graded build chart (page 8)",
+            "Medical history yields a "Graded" decision for all listed conditions (page 4–7)",
+            "Age 50–80, face amount up to $25,000 (inferred)"
+          ]
+        },
+        {
+          "name": "Decline",
+          "criteria": [
+            "Any height/weight outside defined ranges on page 8 → Decline",
+            "Any medical condition marked "Decline" on pages 4–7 → Decline"
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "Tobacco or nicotine use affects certain cardiac and pulmonary conditions by moving a Level outcome to Graded or, in some cases, Decline. For example, angina or coronary procedures within 24 months combined with tobacco use automatically become "Graded" rather than "Level." No separate nicotine-only grid is provided; tobacco status is embedded in each condition's guideline (pages 4–7).",
+      "classifications": [
+        {
+          "type": "Non-Tobacco",
+          "classification": "May qualify for Level outcomes on certain cardiac conditions (e.g., angina, MI, CAD procedures) if other criteria are met"
+        },
+        {
+          "type": "Tobacco (any nicotine in last 12 months)",
+          "classification": "Single Tobacco use combined with certain conditions (angina, MI, CAD procedures) → Graded (instead of Level); some COPD or chronic bronchitis with tobacco → Decline"
+        }
+      ]
+    },
+    "financial_underwriting": {
+      "description": "No income verification or financial multiples are required—underwriting relies on simplified issue rules. Premium is collected via bank draft or check at issuance.",
+      "income_multiples": []
+    },
+    "special_considerations": {
+      "description": "A non-exhaustive list of prescription medications that automatically trigger a Decline decision is provided (page 10–11). Foreign nationals or non-resident aliens are not eligible for SimpliNow Legacy. Combinations of medications and comorbidities may also impact underwriting beyond the examples given.",
+      "factors": [
+        {
+          "factor": "Prescription Medications Triggering Decline",
+          "guideline": [
+            "Antiplatelet/Anticoagulant for CAD (e.g., Plavix, Brilinta, Effient) plus diabetes or tobacco or stroke → Decline",
+            "Chronic angina medications (Ranexa, Isosorbide, Nitrostat) with history of stroke or heart failure → Decline",
+            "COPD/Chronic Bronchitis meds (Daliresp, Breo Ellipta) plus tobacco use → Decline",
+            "Heart failure meds (Entresto, BiDil, Corlanor, Inspra) → Decline",
+            "Serious pain/opioid dependence (Marinol, Dronabinol, long-term opioids) → Decline",
+            "Parkinson's delusions/hallucinations med (Nuplazid) → Decline",
+            "Pulmonary hypertension meds (Tyvaso, Remodulin, Uptravi, Ventavis, Flolan, Vetetr) → Decline",
+            "Pulmonary fibrosis meds (Ofev, Esbriet) → Decline",
+            "Memory loss/dementia meds (Aricept, Namenda, etc.) → Decline",
+            "Opioid dependence meds (Suboxone) → Decline",
+            "Pain meds (Duragesic, MS Contin, Morphine, Methadone, etc.) → Decline",
+            "Alcohol abuse meds (Antabuse, Campral, Vivitrol) → Decline",
+            "Prostate cancer drugs in males (Lupron, Depo-Provera) → Decline",
+            "CKD complication drugs (Calcitriol, Sevelamer, Renvela, Zemplar) → Decline",
+            "Cachexia drugs (Megestrol) → Decline"
+          ]
+        },
+        {
+          "factor": "Foreign Nationals / Non-Resident Aliens",
+          "guideline": "Any proposed insured, owner, or payor who is not a U.S. citizen or green card holder is not eligible for SimpliNow Legacy"
+        }
+      ]
+    }
+  }
+} 

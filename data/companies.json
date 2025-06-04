@@ -1,0 +1,62 @@
+[
+  {
+    "id": "agl",
+    "name": "American General Life Insurance Company",
+    "rating": 4.0
+  },
+  {
+    "id": "royalneighbors",
+    "name": "Royal Neighbors of America",
+    "rating": 4.0
+  },
+  {
+    "id": "kci",
+    "name": "Kansas City Life Insurance Company",
+    "rating": 4.0
+  },
+  {
+    "id": "dignitysolutions",
+    "name": "Dignity Solutions",
+    "rating": 4.0
+  },
+  {
+    "id": "forestersfinancial",
+    "name": "Foresters Financial",
+    "rating": 4.0
+  },
+  {
+    "id": "ameritaslifeinsurancecorp",
+    "name": "Ameritas Life Insurance Corp.",
+    "rating": 4.0
+  },
+  {
+    "id": "americanhomelife",
+    "name": "American Home Life",
+    "rating": 4.0
+  },
+  {
+    "id": "unitedhomelife",
+    "name": "United Home Life Insurance Company",
+    "rating": 4.0
+  },
+  {
+    "id": "sbli",
+    "name": "The Savings Bank Mutual Life Insurance Company of Massachusetts (SBLI)",
+    "rating": 4.0
+  },
+  {
+    "id": "legalandgeneralamerica",
+    "name": "Legal & General America",
+    "rating": 4.0
+  },
+  {
+    "id": "libertybankerslife",
+    "name": "Liberty Bankers Life Insurance Company",
+    "rating": 4.0
+  },
+  {
+    "id": "corebridgefinancial",
+    "name": "Corebridge Financial – American General Life Insurance Company",
+    "rating": 4.0
+  }
+] 

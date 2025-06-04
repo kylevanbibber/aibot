@@ -1,0 +1,50 @@
+{
+  "unitedhomelife_giwl": {
+    "age_min": 50,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "unitedhomelife_eiwl": {
+    "age_min": 50,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "unitedhomelife_deluxbeterm": {
+    "age_min": 18,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "unitedhomelife_deluxe": {
+    "age_min": 50,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "unitedhomelife_premierterm": {
+    "age_min": 18,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": false,
+    "smoker_premium_factor": 1.5
+  },
+  "unitedhomelife_provider": {
+    "age_min": 50,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 1,
+    "smoker_eligible": false,
+    "smoker_premium_factor": 1.5
+  }
+} 

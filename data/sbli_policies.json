@@ -1,0 +1,21 @@
+[
+  {
+    "id": "sbli_quilitylevelterm",
+    "name": "Quility Level Term Life Insurance",
+    "type": "term_life",
+    "term_years": null,
+    "coverage_min": 100000,
+    "coverage_max": 1000000,
+    "premium_factor": 1.5,
+    "features": [
+      "Guaranteed level premium term for 10, 15, 20, or 30 years (age 18–65 eligibility)",
+      "Simplified issue: no exam, no paramedical, no APS, no hospital report—yes/no decision in minutes",
+      "Face amounts: $100,000–$1 million (ages 18–50); $100,000–$1 million or 15× income (ages 41–50); $100,000–$500,000 or 10× income (ages 51–65)",
+      "Risk classes: Elite, Preferred, Select, Standard for non-nicotine; Standard (nicotine) to substandard Table D",
+      "Automatic riders: Accelerated Death Benefit (up to 50% accelerated, max $250,000), Charitable Giving Rider, Unemployment Waiver of Premium",
+      "Optional riders: Children's Level Term Rider ($5,000 or $10,000 coverage), Accidental Death Benefit Rider (increments of $25,000 up to $250,000 or half base face if less than $250,000)",
+      "LegacyShield® digital vault and estate-planning tools included at no charge",
+      "Convertible to a Universal Life product (until attained age 70 or end of level-term period) with no additional underwriting"
+    ]
+  }
+] 

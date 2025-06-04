@@ -1,0 +1,18 @@
+[
+  {
+    "id": "americanhomelife_patriotseries",
+    "name": "AHL Patriot Series Final Expense",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 2500,
+    "coverage_max": 25000,
+    "premium_factor": 2.5,
+    "features": [
+      "Simplified issue final expense up to $25,000",
+      "No medical exam—underwriting based on disease questionnaire",
+      "Graded or modified death benefit for certain conditions",
+      "Guaranteed acceptance for select low-risk applicants (Preferred)",
+      "No age band limitation shown beyond typical final expense ages (50–85)"
+    ]
+  }
+] 

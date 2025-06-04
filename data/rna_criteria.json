@@ -1,0 +1,26 @@
+{
+  "rna_jet_term": {
+    "age_min": 18,
+    "age_max": 65,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "rna_jet_whole": {
+    "age_min": 18,
+    "age_max": 80,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "rna_spwl": {
+    "age_min": 45,
+    "age_max": 80,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  }
+} 

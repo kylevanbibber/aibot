@@ -1,0 +1,32 @@
+[
+  {
+    "id": "agl_legacy",
+    "name": "SimpliNow Legacy",
+    "type": "whole_life",
+    "coverage_min": 2000,
+    "coverage_max": 50000,
+    "premium_factor": 2.5,
+    "features": [
+      "Instant underwriting decisions (no lab draw)",
+      "Electronic application process",
+      "Graded death-benefit design",
+      "Final-expense focus (ages 50–80)",
+      "Simplified issue (no medical exam)"
+    ]
+  },
+  {
+    "id": "agl_legacy_max",
+    "name": "SimpliNow Legacy Max",
+    "type": "whole_life",
+    "coverage_min": 2000,
+    "coverage_max": 50000,
+    "premium_factor": 2.5,
+    "features": [
+      "Instant underwriting decisions (no lab draw)",
+      "Electronic application process",
+      "Level death-benefit design",
+      "Final-expense focus (ages 50–80)",
+      "Simplified issue (no medical exam)"
+    ]
+  }
+] 

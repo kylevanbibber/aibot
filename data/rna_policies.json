@@ -1,0 +1,48 @@
+[
+  {
+    "id": "rna_jet_term",
+    "name": "Jet Term Life",
+    "type": "term_life",
+    "term_years": 20,
+    "coverage_min": 25000,
+    "coverage_max": 5000000,
+    "premium_factor": 1.5,
+    "features": [
+      "Accelerated underwriting option for ages 18–50 (up to $500,000 face)",
+      "Fully underwritten option for ages 51–65 (up to $5,000,000 face)",
+      "Multiple risk classes (Preferred, Standard, Substandard)",
+      "Electronic application and signature",
+      "Immediate cash-value build (term conversion available)"
+    ]
+  },
+  {
+    "id": "rna_jet_whole",
+    "name": "Jet Whole Life",
+    "type": "whole_life",
+    "coverage_min": 25000,
+    "coverage_max": 5000000,
+    "premium_factor": 2.5,
+    "features": [
+      "Accelerated underwriting option for ages 18–50 (up to $500,000 face)",
+      "Fully underwritten option for ages 51–80 (up to $5,000,000 face)",
+      "Permanent coverage with guaranteed cash value",
+      "Multiple risk classes (Preferred, Standard, Substandard)",
+      "Electronic application and signature"
+    ]
+  },
+  {
+    "id": "rna_spwl",
+    "name": "Single Premium Whole Life (SPWL)",
+    "type": "whole_life",
+    "coverage_min": 5000,
+    "coverage_max": 500000,
+    "premium_factor": 2.5,
+    "features": [
+      "Single-premium payment (minimum $5,000)",
+      "Point-of-sale telephone interview (no APS if net amount ≤ $50,000)",
+      "Telephone interview requirement for $50,000–$100,000 net amount at risk",
+      "Fully underwritten for net amount at risk over $100,000",
+      "Guaranteed level death benefit"
+    ]
+  }
+] 

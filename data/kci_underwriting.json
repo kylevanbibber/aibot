@@ -1,0 +1,269 @@
+{
+  "company_id": "kci",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "Kansas City Life uses height/weight tables to determine maximum allowable weights for various risk classes.  Heights are expressed in feet/inches (imperial) and weights in pounds.",
+      "tables": [
+        {
+          "title": "Standard Select Nontobacco Underwriting Guidelines (Adult Build Chart, Ages 18–70)",
+          "measurement_unit": "imperial (height in feet/inches, weight in pounds)",
+          "columns": ["Height", "Min Weight", "Max Weight"],
+          "rows": [
+            ["4'8\"", 83, 146],
+            ["4'9\"", 86, 151],
+            ["4'10\"", 89, 157],
+            ["4'11\"", 92, 163],
+            ["5'0\"", 95, 168],
+            ["5'1\"", 98, 174],
+            ["5'2\"", 102, 180],
+            ["5'3\"", 105, 185],
+            ["5'4\"", 108, 191],
+            ["5'5\"", 112, 197],
+            ["5'6\"", 115, 203],
+            ["5'7\"", 119, 210],
+            ["5'8\"", 122, 216],
+            ["5'9\"", 126, 222],
+            ["5'10\"", 129, 229],
+            ["5'11\"", 133, 235],
+            ["6'0\"", 137, 242],
+            ["6'1\"", 141, 249],
+            ["6'2\"", 145, 255],
+            ["6'3\"", 149, 262],
+            ["6'4\"", 152, 269],
+            ["6'5\"", 157, 277],
+            ["6'6\"", 161, 284],
+            ["6'7\"", 165, 291],
+            ["6'8\"", 169, 299],
+            ["6'9\"", 173, 306]
+          ]
+        }
+      ]
+    },
+    "medical_conditions": {
+      "description": "Kansas City Life categorizes medical impairments into specific decision tables, often referencing time since diagnosis or treatment, current severity, and co-morbidities.  Below is a representative sample of key conditions and their underwriting impact.",
+      "conditions": [
+        {
+          "condition": "Diabetes (Type II)",
+          "guideline": "Up to age 70: A1C ≤ 6.0 (with or without treatment) qualifies for Preferred Elite or Preferred Non-Tobacco. A1C 6.1–6.5 graded depending on age. A1C > 6.6 or on insulin generally graded or declined based on severity.",
+          "rate_classes": ["Preferred Elite", "Preferred Non-Tobacco", "Standard", "Decline"]
+        },
+        {
+          "condition": "Hypertension (High Blood Pressure)",
+          "guideline": "Preferred Elite: ≤ 140/90 (with or without treatment). Preferred Non-Tobacco: ≤ 150/90. Standard Select: ≤ 150/90. Standard: ≤ 150/90 (with or without treatment) for ages 0–70.",
+          "rate_classes": ["Preferred Elite", "Preferred Non-Tobacco", "Standard Select", "Standard"]
+        },
+        {
+          "condition": "Coronary Artery Disease (CAD)",
+          "guideline": "Any CAD event within last 6 months = decline. CAD treated > 6 months ago with good prognosis may be graded (Table 2–4) based on age and procedure.",
+          "rate_classes": ["Level", "Graded", "Decline"]
+        },
+        {
+          "condition": "Chronic Obstructive Pulmonary Disease (COPD)",
+          "guideline": "Non-tobacco users not hospitalized in last 24 months may be graded (Table 2–4). Tobacco users or multiple hospitalizations in last 24 months = decline.",
+          "rate_classes": ["Preferred", "Graded", "Decline"]
+        },
+        {
+          "condition": "Cancer (Non-Melanoma Skin Exemptions)",
+          "guideline": "Certain testicular/thyroid/cervical cancers treated ≥ 20 years ago may qualify for Standard; all others within the last 48 months are graded or declined depending on stage and type (Table 4–6).",
+          "rate_classes": ["Standard", "Graded", "Decline"]
+        },
+        {
+          "condition": "Alcohol/Substance Abuse",
+          "guideline": "No history of treatment in last 5 years for Standard; 10 years for Preferred tables; any active use = decline.  Non-prescription narcotic use in last 24 months = decline.",
+          "rate_classes": ["Preferred Elite", "Preferred", "Standard", "Decline"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "Kansas City Life specifies required tests based on issue age and total face amount.  As face amount increases, additional lab and inspection requirements apply.",
+      "tables": [
+        {
+          "title": "Medical Requirements by Age & Coverage Amount",
+          "age_ranges": ["18–40", "41–59", "60–70"],
+          "coverage_ranges": ["$0–$250,000", "$250,001–$500,000", "$500,001–$1,000,000", "$1,000,001–$3,000,000", "$3,000,001–$5,000,000", "$5,000,001+"],
+          "requirements": [
+            {
+              "age": "18–40",
+              "coverage": "$0–$250,000",
+              "tests": ["Non-Medical (agent questions)"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$250,001–$500,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "Rx Search", "APS"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$500,001–$1,000,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$1,000,001–$3,000,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS", "PFS"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$3,000,001–$5,000,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS", "IR", "EIR", "3rd Party Financials"]
+            },
+            {
+              "age": "41–59",
+              "coverage": "$0–$250,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "Rx Search"]
+            },
+            {
+              "age": "41–59",
+              "coverage": "$250,001–$500,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS"]
+            },
+            {
+              "age": "41–59",
+              "coverage": "$500,001–$1,000,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS", "PFS"]
+            },
+            {
+              "age": "41–59",
+              "coverage": "$1,000,001–$3,000,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS", "IR", "EIR", "3rd Party Financials"]
+            },
+            {
+              "age": "41–59",
+              "coverage": "$3,000,001–$5,000,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS", "EIR", "3rd Party Financials"]
+            },
+            {
+              "age": "60–70",
+              "coverage": "$0–$250,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "Rx Search", "EKG", "APS"]
+            },
+            {
+              "age": "60–70",
+              "coverage": "$250,001–$500,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS", "PFS"]
+            },
+            {
+              "age": "60–70",
+              "coverage": "$500,001–$1,000,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS", "IR", "EIR", "3rd Party Financials"]
+            },
+            {
+              "age": "60–70",
+              "coverage": "$1,000,001–$3,000,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS", "EIR", "3rd Party Financials"]
+            },
+            {
+              "age": "60–70",
+              "coverage": "$3,000,001–$5,000,000",
+              "tests": ["Paramedical Exam", "Senior Assessment", "Blood Profile", "HOS / MVR", "EKG", "Rx Search", "APS", "EIR", "3rd Party Financials"]
+            }
+          ]
+        }
+      ]
+    },
+    "risk_classes": {
+      "description": "Kansas City Life offers multiple risk classifications based on nicotine use, medical history, and build chart outcomes.  Each classification carries its own set of build, laboratory, and history requirements.",
+      "classes": [
+        {
+          "name": "Preferred Elite",
+          "criteria": [
+            "Nicotine-free for at least 5 years",
+            "Blood Pressure ≤ 140/90 (with or without treatment)",
+            "Total cholesterol ≤ 240, Chol/HDL ≤ 5.0 (with or without treatment)",
+            "A1C ≤ 6.0",
+            "No cardiovascular disease, diabetes, stroke, or cancer (excluding certain non-melanoma skin cancers or eligible long-remission testicular/thyroid/cervical cancers)",
+            "No alcohol or substance abuse in last 15 years",
+            "No more than two moving violations in last 3 years; no DUI or reckless driving in last 5 years",
+            "No aviation-related risk except commercial pilots",
+            "No hazardous avocation"
+          ]
+        },
+        {
+          "name": "Preferred Non-Tobacco",
+          "criteria": [
+            "Nicotine-free for at least 3 years (excluding occasional cigar/chewing tobacco use ≤ 12 times per year with negative exam)",
+            "Blood Pressure ≤ 150/90 (with or without treatment)",
+            "Total cholesterol ≤ 260, Chol/HDL ≤ 6.0 (with or without treatment)",
+            "A1C ≤ 6.0",
+            "No cardiovascular disease, diabetes, stroke, or cancer (with certain long-remission exceptions)",
+            "No alcohol or substance abuse in last 10 years",
+            "No more than two moving violations in last 3 years; no DUI or reckless driving in last 5 years",
+            "No aviation-related risk except commercial pilots; private pilots considered individually",
+            "No hazardous avocation"
+          ]
+        },
+        {
+          "name": "Standard Select Non-Tobacco",
+          "criteria": [
+            "Nicotine-free for at least 1 year (excluding occasional cigar/chewing tobacco use ≤ 12 times per year with negative exam)",
+            "Blood Pressure ≤ 150/90 (with or without treatment)",
+            "Total cholesterol ≤ 270, Chol/HDL ≤ 7.0 (with or without treatment)",
+            "No cardiovascular disease, stroke, or cancer (excluding certain long-remission cancers)",
+            "Type II Diabetes acceptable if A1C < 6.6 and no insulin or complications",
+            "No alcohol or substance abuse in last 5 years",
+            "No more than two moving violations in last 3 years; no DUI or reckless driving in last 5 years",
+            "No aviation-related risk except commercial pilots; private pilots considered individually",
+            "No hazardous avocation"
+          ]
+        },
+        {
+          "name": "Standard Non-Tobacco / Tobacco / Other Substandard Classes",
+          "criteria": [
+            "Tobacco users or anyone failing Preferred thresholds placed into Standard or Rated classes based on specific health history and severity (Tables 2–6)",
+            "Many substandard tobacco and substandard non-tobacco classes exist up to Table 16 (e.g., Substandard 1 Non-Tobacco, Substandard 2 Tobacco)",
+            "Build chart thresholds more lenient than Preferred classes (as shown in build_chart tables)",
+            "Additional medical requirements (e.g., EKG, APS) based on substandard class",
+            "No more than two moving violations in last 3 years; no DUI or reckless driving in last 5 years",
+            "Aviation or hazardous avocation handled on individual or flat extra basis"
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "Kansas City Life differentiates nicotine users by duration since last use, affecting rate class eligibility.  Cigar and chewing tobacco exceptions apply under certain categories.",
+      "classifications": [
+        {
+          "type": "Preferred Elite Non-Tobacco",
+          "classification": "Nicotine-free ≥ 5 years; includes any tobacco, e-cigarettes, vaping, marijuana, nicotine substitutes—no use within last 5 years"
+        },
+        {
+          "type": "Preferred Non-Tobacco",
+          "classification": "Nicotine-free ≥ 3 years; occasional cigar/chewing tobacco ≤ 12 times per year is allowed if exam is nicotine-negative"
+        },
+        {
+          "type": "Standard Select Non-Tobacco",
+          "classification": "Nicotine-free ≥ 1 year; occasional cigar/chewing tobacco ≤ 12 times per year is allowed if exam is nicotine-negative"
+        },
+        {
+          "type": "Standard Tobacco",
+          "classification": "Any use within last 12 months—subject to Standard Tobacco pricing and rating tables"
+        }
+      ]
+    },
+    "financial_underwriting": {
+      "description": "Kansas City Life's guide does not explicitly publish income multiple guidelines or financial justification formulas.  Instead, financial underwriting is handled via documentation requirements tied to face amount (e.g., PFS, 3rd-party financials).",
+      "income_multiples": []
+    },
+    "special_considerations": {
+      "description": "Additional underwriting factors beyond medical and build considerations include driving record, aviation activities, and hazardous occupations or hobbies.  Guidelines below summarize these factors.",
+      "factors": [
+        {
+          "factor": "Driving Record",
+          "guideline": "No more than two moving violations in last 3 years; no DUI, DWI, or reckless driving in last 5 years"
+        },
+        {
+          "factor": "Aviation",
+          "guideline": "Commercial airline pilots may qualify under Preferred classes.  Private pilots require individual evaluation; IFR and minimum flight hours apply for higher risk classes."
+        },
+        {
+          "factor": "Hazardous Avocation",
+          "guideline": "Flat extra or declination for rated hobbies (e.g., skydiving, racing).  No hazardous avocation allowed for Elite/Preferred classes."
+        },
+        {
+          "factor": "Alcohol/Substance Abuse",
+          "guideline": "No history of treatment in last 5 years for Standard Select; 10 years for Preferred Non-Tobacco; 15 years for Preferred Elite.  Active use = decline."
+        }
+      ]
+    }
+  }
+} 

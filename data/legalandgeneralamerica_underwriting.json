@@ -1,0 +1,365 @@
+{
+  "company_id": "legalandgeneralamerica",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "Quility Term Plus uses a unisex height/weight chart (imperial units) to assign one of four rate classes: Preferred Plus, Preferred, Standard Plus, or Standard. Half of any intentional weight loss over the past 12 months may be added back to current weight when determining final rate class.",
+      "tables": [
+        {
+          "title": "Maximum Weight in Pounds (Quility Term Plus)",
+          "measurement_unit": "imperial (height in feet/inches, weight in pounds)",
+          "columns": [
+            "Height",
+            "Preferred Plus",
+            "Preferred",
+            "Standard Plus",
+            "Standard"
+          ],
+          "rows": [
+            ["4'10\"", "89 – 134", "135 – 155", "156 – 196", "197 – 205"],
+            ["4'11\"", "92 – 139", "140 – 160", "161 – 203", "204 – 212"],
+            ["5'0\"",  "95 – 144", "145 – 166", "167 – 209", "210 – 220"],
+            ["5'1\"",  "98 – 149", "150 – 171", "172 – 216", "217 – 227"],
+            ["5'2\"",  "101 – 153", "154 – 177", "178 – 224", "225 – 235"],
+            ["5'3\"",  "104 – 158", "159 – 183", "184 – 231", "232 – 242"],
+            ["5'4\"",  "108 – 164", "165 – 188", "189 – 238", "239 – 250"],
+            ["5'5\"",  "111 – 169", "170 – 194", "195 – 246", "247 – 258"],
+            ["5'6\"",  "115 – 174", "175 – 200", "201 – 253", "254 – 266"],
+            ["5'7\"",  "118 – 179", "180 – 207", "208 – 261", "261 – 274"],
+            ["5'8\"",  "122 – 185", "186 – 213", "214 – 269", "270 – 282"],
+            ["5'9\"",  "125 – 190", "191 – 219", "220 – 277", "278 – 291"],
+            ["5'10\"", "129 – 196", "197 – 225", "226 – 285", "286 – 299"],
+            ["5'11\"", "133 – 201", "202 – 232", "233 – 293", "294 – 308"],
+            ["6'0\"",  "136 – 207", "208 – 239", "240 – 302", "301 – 317"],
+            ["6'1\"",  "140 – 213", "214 – 245", "246 – 310", "311 – 325"],
+            ["6'2\"",  "144 – 219", "220 – 252", "253 – 319", "320 – 334"],
+            ["6'3\"",  "148 – 225", "226 – 259", "260 – 327", "328 – 344"],
+            ["6'4\"",  "152 – 231", "232 – 266", "267 – 336", "337 – 353"],
+            ["6'5\"",  "156 – 237", "238 – 273", "274 – 345", "346 – 362"],
+            ["6'6\"",  "160 – 243", "244 – 280", "281 – 354", "355 – 372"],
+            ["6'7\"",  "164 – 249", "250 – 287", "288 – 363", "363 – 381"],
+            ["6'8\"",  "168 – 256", "257 – 295", "296 – 372", "373 – 391"],
+            ["6'9\"",  "173 – 262", "263 – 302", "303 – 382", "383 – 401"],
+            ["6'10\"", "177 – 268", "269 – 309", "310 – 391", "392 – 411"],
+            ["6'11\"", "181 – 275", "276 – 317", "318 – 401", "402 – 421"]
+          ]
+        }
+      ]
+    },
+    "medical_conditions": {
+      "description": "Quility Term Plus accepts a wide range of health conditions, provided they meet certain stability, treatment, and recency requirements. Applicants with conditions outside these criteria are declined or routed to a manual review.",
+      "conditions": [
+        {
+          "condition": "Autoimmune Disorders (e.g., Rheumatoid Arthritis)",
+          "guideline": [
+            "No impact to mobility (no use of crutches or wheelchair)",
+            "Minimal symptoms without need for steroids, Methotrexate, or immunosuppressive meds",
+            "Applicant age > 30"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Ulcerative Colitis",
+          "guideline": [
+            "No surgery related to colitis",
+            "No hospitalizations in past 2 years",
+            "Diagnosed > 6 months ago",
+            "No active complications or ongoing medication"
+          ],
+          "rate_classes": ["Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Basal/Squamous Cell Skin Cancer (single occurrence)",
+          "guideline": [
+            "Localized and fully treated (no spread)",
+            "All follow-up complete"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Asthma",
+          "guideline": [
+            "No ER visits or hospitalizations for asthma",
+            "No impact on daily activities (no time off work)",
+            "Up to one maintenance medication, no steroids in past year"
+          ],
+          "rate_classes": ["Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Atrial Fibrillation",
+          "guideline": [
+            "No occurrence in past 2 years",
+            "No ongoing treatment required",
+            "All required testing/procedures complete",
+            "Only ablation allowed (no other cardiac surgeries/procedures)"
+          ],
+          "rate_classes": ["Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Sleep Apnea",
+          "guideline": [
+            "No daily symptoms of sleepiness",
+            "Compliant with CPAP or no treatment needed",
+            "No use of supplemental oxygen or medications for symptoms"
+          ],
+          "rate_classes": ["Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Anxiety (Generalized, etc.)",
+          "guideline": [
+            "No history of hospitalization, suicide attempts, or substance abuse",
+            "Up to one medication, well controlled for ≥ 6 months"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Depression",
+          "guideline": [
+            "No treatment with anti-psychotic medications",
+            "No hospitalization required",
+            "Up to one antidepressant, no comorbid mental/nervous conditions, no substance abuse, no suicide attempts"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "PTSD (Post-Traumatic Stress Disorder)",
+          "guideline": [
+            "No hospitalization, employed full-time (no time off work)",
+            "Up to one medication (past or present)",
+            "No history of self-harm or suicide attempts",
+            "No concurrent alcohol use"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Diabetes (Type II, non-insulin)",
+          "guideline": [
+            "Diagnosed > 6 months ago and < 5 years ago",
+            "Diagnosed age ≥ 40",
+            "Non-insulin treatments only (oral meds/diet control)",
+            "A1C < 8, no complications",
+            "Follow-up with physician in past 2 years"
+          ],
+          "rate_classes": ["Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Hyperlipidemia (Treated or Untreated)",
+          "guideline": ["Cholesterol and ratio values known and favorable"],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Hypertension",
+          "guideline": [
+            "On two or fewer medications",
+            "No hospitalizations for hypertensive crises",
+            "Blood pressure within normal limits over past 2 years"
+          ],
+          "rate_classes": ["Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Multiple Sclerosis (Relapsing/Remitting)",
+          "guideline": [
+            "No mobility issues (no crutches/wheelchair)",
+            "Fewer than three relapses per year",
+            "Diagnosed ≤ 35 years of age, and current age < 40 or > 60",
+            "No use of Tysabri (Natalizumab)"
+          ],
+          "rate_classes": ["Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Seizure / Epilepsy",
+          "guideline": [
+            "No seizure events in past 5 years",
+            "No hospitalizations in past 5 years",
+            "Diagnosed > 3 months ago with full evaluation",
+            "No ongoing medications required"
+          ],
+          "rate_classes": ["Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Hypothyroidism",
+          "guideline": ["Controlled, diagnosed > 6 months ago, no complications"],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Aviation (Non-Commercial Pilot)",
+          "guideline": [
+            "Certified open-cockpit up to 100 ft dives only",
+            "Pilots of major airlines flying in US/Canada must carry Aviation Exclusion Rider"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Driving Record",
+          "guideline": [
+            "No more than four moving violations in past 3 years",
+            "No DUI/DWI or reckless/negligent driving within past 3 years",
+            "No license revocation/suspension in past 3 years"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Recreational Scuba Diving",
+          "guideline": [
+            "Up to 100 ft open-water dives only (no wreck, salvage, cave, or ice diving)",
+            "Certified diver status required"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Marijuana Use",
+          "guideline": [
+            "Non-tobacco rates may apply",
+            "Rate class based on frequency and form (CBD vs. dry vaping, etc.)",
+            "No recent synthetic marijuana use"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        },
+        {
+          "condition": "Military Status",
+          "guideline": [
+            "Reservists with no orders received or anticipated",
+            "No Special Forces (e.g., Navy SEAL, Army Ranger)",
+            "Active duty evaluated on an individual basis (rank, duties, deployment)"
+          ],
+          "rate_classes": ["Preferred Plus", "Preferred", "Standard Plus", "Standard"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "No laboratory tests, bloodwork, or paramedical exams are required—Quility Term Plus is fully simplified issue (aside from height/weight build chart and a short health questionnaire).",
+      "tables": []
+    },
+    "risk_classes": {
+      "description": "Quility Term Plus assigns one of four simplified issue risk classes—Preferred Plus, Preferred, Standard Plus, and Standard—based on build chart placement and accepted medical/non-medical criteria. There are no table ratings.",
+      "classes": [
+        {
+          "name": "Preferred Plus",
+          "criteria": [
+            "Height/weight within Preferred Plus column of build chart (see Part I)",
+            "No disqualifying health conditions or lifestyle factors in Part III (e.g., no major autoimmune complications, no uncontrolled hypertension, no active substance abuse)",
+            "Age 18–65, face amount within income-multiple limits",
+            "No tobacco use (including marijuana if frequent or synthetic)"
+          ]
+        },
+        {
+          "name": "Preferred",
+          "criteria": [
+            "Height/weight within Preferred column of build chart",
+            "Accepted medical conditions from Part II (e.g., stable asthma, controlled diabetes without insulin, treated skin cancer)",
+            "No disqualifying conditions or lifestyles in Part III",
+            "Age 18–65, face amount within income-multiple limits"
+          ]
+        },
+        {
+          "name": "Standard Plus",
+          "criteria": [
+            "Height/weight within Standard Plus column of build chart",
+            "More moderate accepted conditions (e.g., atrial fibrillation > 2 years, treated ulcerative colitis, mild MS without mobility issues)",
+            "No disqualifying conditions or lifestyles in Part III",
+            "Age 18–65, face amount within income-multiple limits"
+          ]
+        },
+        {
+          "name": "Standard",
+          "criteria": [
+            "Height/weight within Standard column of build chart",
+            "Any accepted conditions from Part II that are stable but may require ongoing follow-up (e.g., controlled hypertension on two meds, diabetes with A1C < 8, mild depression)",
+            "No disqualifying components in Part III (e.g., recent cancer, recent major surgery, severe COPD)",
+            "Age 18–65, face amount within income-multiple limits"
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "Any tobacco or nicotine use (cigarettes, cigars, vaping, CBD/synthetic) within the past 12 months routes an applicant to the Standard class. Occasional marijuana use (under specified frequency) may still qualify for non-tobacco rates; synthetic marijuana or heavy recreational use is declined.",
+      "classifications": [
+        {
+          "type": "Non-Tobacco",
+          "classification": "Eligible for Preferred Plus, Preferred, or Standard Plus, depending on build and health history."
+        },
+        {
+          "type": "Tobacco (any nicotine in last 12 months)",
+          "classification": "Routed to Standard class (no Preferred or Preferred Plus available)."
+        },
+        {
+          "type": "Occasional Marijuana",
+          "classification": "Considered non-tobacco if under frequency limits (see Part II)."
+        },
+        {
+          "type": "Synthetic Marijuana",
+          "classification": "Decline."
+        }
+      ]
+    },
+    "financial_underwriting": {
+      "description": "Income verification is not collected at application, but face amounts are constrained by income multiples. Underwriting relies on self-reported income to ensure suitability of coverage amount relative to need.",
+      "income_multiples": [
+        {
+          "age_range": "18–40",
+          "income_multiple": "≤ 20× annual income (max $1,000,000 face)"
+        },
+        {
+          "age_range": "41–50",
+          "income_multiple": "≤ 15× annual income (max $1,000,000 face)"
+        },
+        {
+          "age_range": "51–60",
+          "income_multiple": "≤ 10× annual income (max $500,000 face)"
+        },
+        {
+          "age_range": "61–65",
+          "income_multiple": "≤ 10× annual income (max $500,000 face)"
+        }
+      ]
+    },
+    "special_considerations": {
+      "description": "Certain medical conditions and lifestyle factors automatically decline Quility Term Plus or require alternative coverage. See Part III for details.",
+      "factors": [
+        {
+          "factor": "Autoimmune Disorders with Mobility Impact",
+          "guideline": "Any autoimmune disorder requiring crutches/wheelchair → Decline."
+        },
+        {
+          "factor": "Crohn's Disease without stable treatment",
+          "guideline": "No treatment needed for ≥ 2 years, normal colonoscopy within 2 years, stable weight and no complications to be acceptable; otherwise → Decline."
+        },
+        {
+          "factor": "Cancer",
+          "guideline": "Any diagnosis or active treatment in past 10 years (except non-melanoma skin cancers) → Decline; basal/squamous exceptions per Part II."
+        },
+        {
+          "factor": "Cardiac/Respiratory Diseases",
+          "guideline": "Any history of peripheral vascular disease, congenital heart disorder, pulmonary fibrosis, recent atrial fibrillation (< 2 years), COPD with more than minimal symptoms, oxygen use, or severe heart murmurs/pacemaker/defibrillator → Decline."
+        },
+        {
+          "factor": "Neurological Diseases",
+          "guideline": "Parkinson's, ALS, Alzheimer's, any dementia ever → Decline; recent seizures (< 3 months) or full evaluation incomplete → Possible decline."
+        },
+        {
+          "factor": "Substance Abuse",
+          "guideline": "Any substance abuse or treatment in past 10 years → Decline; single or multiple suicide attempts in past 10 years → Decline."
+        },
+        {
+          "factor": "Pregnancy",
+          "guideline": "Current pregnancy with complications (e.g., pre-eclampsia, gestational diabetes) → Decline."
+        },
+        {
+          "factor": "Felony or Criminal History",
+          "guideline": "Any felony conviction or probation/parole within 10 years → Decline."
+        },
+        {
+          "factor": "Driving Violations",
+          "guideline": "Multiple DUI/DWI or reckless/negligent driving → Decline; more than four moving violations in past 3 years → Decline or manual review."
+        },
+        {
+          "factor": "High-Risk Activities",
+          "guideline": "Motor racing, private aviation, scuba > 100 ft, or other extreme sports within 2 years → Decline."
+        },
+        {
+          "factor": "Pending Medical Tests/Procedures",
+          "guideline": "Any pending diagnostic tests or recommended surgeries not completed → Decline."
+        }
+      ]
+    }
+  }
+} 

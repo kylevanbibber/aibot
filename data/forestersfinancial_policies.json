@@ -1,0 +1,79 @@
+[
+  {
+    "id": "forestersfinancial_yourterm",
+    "name": "Your Term",
+    "type": "term_life",
+    "term_years": null,
+    "coverage_min": 100000,
+    "coverage_max": 3000000,
+    "premium_factor": 1.5,
+    "features": [
+      "Level, renewable term structure (face amounts from $100,000–$3,000,000)",
+      "Convertible to permanent Foresters products (e.g., Smart UL, Advantage Plus II) without new evidence of insurability",
+      "Electronic application with accelerated underwriting (ages 18–55, $100,000–$1,000,000)",
+      "No exam required for non-medical issue up to $400,000 (ages 18–55)",
+      "Preferred and substandard classes available"
+    ]
+  },
+  {
+    "id": "forestersfinancial_advantageplusii",
+    "name": "Advantage Plus II",
+    "type": "universal_life",
+    "term_years": null,
+    "coverage_min": 25000,
+    "coverage_max": 3000000,
+    "premium_factor": 2.0,
+    "features": [
+      "Flexible premium, universal life design (face amounts from $25,000–$3,000,000)",
+      "Level cost of insurance charges; cash-value accumulation",
+      "Option to add 10-year or 20-year term rider at issue",
+      "Accelerated underwriting from ages 18–55 (face $100,000–$1,000,000)",
+      "No exam required for non-medical issue up to $400,000 (ages 16–55)",
+      "Guaranteed insurability rider available at optional issue"
+    ]
+  },
+  {
+    "id": "forestersfinancial_smartul",
+    "name": "Smart UL",
+    "type": "universal_life",
+    "term_years": null,
+    "coverage_min": 25000,
+    "coverage_max": 3000000,
+    "premium_factor": 2.0,
+    "features": [
+      "Flexible premium, universal life design (face amounts $25,000–$3,000,000)",
+      "Accelerated underwriting (ages 18–55, $100,000–$1,000,000)",
+      "No exam required for non-medical issue up to $400,000 (ages 16–55)",
+      "Full cash-value build potential with competitive crediting rate",
+      "Optional accelerated death benefit rider for chronic/critical illness",
+      "Level cost of insurance and guaranteed minimum interest credit"
+    ]
+  },
+  {
+    "id": "forestersfinancial_strongfoundation",
+    "name": "Strong Foundation",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 25000,
+    "coverage_max": 500000,
+    "premium_factor": 2.5,
+    "features": [
+      "Simplified-issue whole life (face amounts up to $500,000 non-medical, ages 18–55)",
+      "No blood or paramedical exam required for non-medical issue",
+      "Accelerated underwriting option (ages 18–55, up to $500,000)",
+      "Telephone interview required only for ages 71–85",
+      "Guaranteed level death benefit with cash value",
+      "Return of premium option available to higher-risk applicants (graded structure)"
+    ]
+  },
+  {
+    "id": "forestersfinancial_planrightwholelife",
+    "name": "PlanRight Whole Life Insurance",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 25000,
+    "coverage_max": 250000,
+    "premium_factor": 2.5,
+    "features": []
+  }
+] 

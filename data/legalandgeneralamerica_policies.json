@@ -1,0 +1,22 @@
+[
+  {
+    "id": "legalandgeneralamerica_quilitytermplus",
+    "name": "Quility Term Plus",
+    "type": "term_life",
+    "term_years": null,
+    "coverage_min": 50000,
+    "coverage_max": 1000000,
+    "premium_factor": 1.5,
+    "features": [
+      "Instant underwriting decisions for ~70% of applicants; 20% APS-free within 24 hours",
+      "Simplified issue process—no paramedical exam or APS for most cases",
+      "Face amounts $50,000–$1 million (subject to income multiple limits by age)",
+      "Level-term options: 10, 15, 20, or 30 years (applicant age 18–65)",
+      "Conversion privilege to Quility Universal Life up to age 70 without new evidence of insurability",
+      "Accelerated Death Benefit Rider available on face ≥ $100,000 (pays terminal illness benefit)",
+      "Children's Level Term Rider available for $25,000 per child (ages 15 days–18 years)",
+      "Charitable Giving Rider (no additional premium) pays 1% of face (max $5,000) to a 501(c)(3)",
+      "Unemployment Waiver of Premium Rider (waives premium if involuntarily unemployed for 6 months)"
+    ]
+  }
+] 

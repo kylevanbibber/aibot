@@ -1,0 +1,163 @@
+[
+  {
+    "id": "kci_term_10",
+    "name": "Signature Term Express Level 10",
+    "type": "term_life",
+    "term_years": 10,
+    "coverage_min": 50000,
+    "coverage_max": 300000,
+    "premium_factor": 1.5,
+    "features": [
+      "Level death benefit, 10-year renewable/convertible term",
+      "Accelerated Death Benefit for Chronic Condition",
+      "Accelerated Death Benefit for Critical Illness",
+      "Accelerated Death Benefit for Terminal Illness (up to 80% of face, max $250,000)",
+      "Waiver of Premium for Unemployment",
+      "Residential Damage Waiver of Premium (waives premiums if primary residence sustains $25,000+ damage)",
+      "Accidental Death Benefit rider (up to $200,000)",
+      "Children's Term Insurance rider",
+      "Income Assured Option rider",
+      "Waiver of Premium rider (for disability)",
+      "Guaranteed maximum premium for first 10 years",
+      "Convertible to any eligible Kansas City Life permanent policy after policy year 2"
+    ]
+  },
+  {
+    "id": "kci_term_15",
+    "name": "Signature Term Express Level 15",
+    "type": "term_life",
+    "term_years": 15,
+    "coverage_min": 50000,
+    "coverage_max": 300000,
+    "premium_factor": 1.5,
+    "features": [
+      "Level death benefit, 15-year renewable/convertible term",
+      "Accelerated Death Benefit for Chronic Condition",
+      "Accelerated Death Benefit for Critical Illness",
+      "Accelerated Death Benefit for Terminal Illness (up to 80% of face, max $250,000)",
+      "Waiver of Premium for Unemployment",
+      "Residential Damage Waiver of Premium (waives premiums if primary residence sustains $25,000+ damage)",
+      "Accidental Death Benefit rider (up to $200,000)",
+      "Children's Term Insurance rider",
+      "Income Assured Option rider",
+      "Waiver of Premium rider (for disability)",
+      "Guaranteed maximum premium for first 15 years",
+      "Convertibility after policy year 2"
+    ]
+  },
+  {
+    "id": "kci_term_20",
+    "name": "Signature Term Express Level 20",
+    "type": "term_life",
+    "term_years": 20,
+    "coverage_min": 50000,
+    "coverage_max": 300000,
+    "premium_factor": 1.5,
+    "features": [
+      "Level death benefit, 20-year renewable/convertible term",
+      "Accelerated Death Benefit for Chronic Condition",
+      "Accelerated Death Benefit for Critical Illness",
+      "Accelerated Death Benefit for Terminal Illness (up to 80% of face, max $250,000)",
+      "Waiver of Premium for Unemployment",
+      "Residential Damage Waiver of Premium (waives premiums if primary residence sustains $25,000+ damage)",
+      "Accidental Death Benefit rider (up to $200,000)",
+      "Children's Term Insurance rider",
+      "Income Assured Option rider",
+      "Waiver of Premium rider (for disability)",
+      "Guaranteed maximum premium for first 20 years",
+      "Convertibility after policy year 2"
+    ]
+  },
+  {
+    "id": "kci_term_30",
+    "name": "Signature Term Express Level 30",
+    "type": "term_life",
+    "term_years": 30,
+    "coverage_min": 50000,
+    "coverage_max": 300000,
+    "premium_factor": 1.5,
+    "features": [
+      "Level death benefit, 30-year renewable/convertible term",
+      "Accelerated Death Benefit for Chronic Condition",
+      "Accelerated Death Benefit for Critical Illness",
+      "Accelerated Death Benefit for Terminal Illness (up to 80% of face, max $250,000)",
+      "Waiver of Premium for Unemployment",
+      "Residential Damage Waiver of Premium (waives premiums if primary residence sustains $25,000+ damage)",
+      "Accidental Death Benefit rider (up to $200,000)",
+      "Children's Term Insurance rider",
+      "Income Assured Option rider",
+      "Waiver of Premium rider (for disability)",
+      "Guaranteed maximum premium for first 30 years",
+      "Convertibility after policy year 2"
+    ]
+  },
+  {
+    "id": "kci_rop_20",
+    "name": "Signature Term Express ROP 20",
+    "type": "term_life",
+    "term_years": 20,
+    "coverage_min": 50000,
+    "coverage_max": 300000,
+    "premium_factor": 1.5,
+    "features": [
+      "20-year term with Return of Premium feature (cash value at end of level period equals total base premiums paid)",
+      "Accelerated Death Benefit for Chronic Condition",
+      "Accelerated Death Benefit for Critical Illness",
+      "Accelerated Death Benefit for Terminal Illness (up to 80% of face, max $250,000)",
+      "Waiver of Premium for Unemployment",
+      "Residential Damage Waiver of Premium",
+      "Accidental Death Benefit rider (up to $200,000)",
+      "Children's Term Insurance rider",
+      "Income Assured Option rider",
+      "Waiver of Premium rider (for disability)",
+      "Guaranteed maximum premium for first 20 years",
+      "Convertibility after policy year 2"
+    ]
+  },
+  {
+    "id": "kci_rop_25",
+    "name": "Signature Term Express ROP 25",
+    "type": "term_life",
+    "term_years": 25,
+    "coverage_min": 50000,
+    "coverage_max": 300000,
+    "premium_factor": 1.5,
+    "features": [
+      "25-year term with Return of Premium feature (cash value at end of level period equals total base premiums paid)",
+      "Accelerated Death Benefit for Chronic Condition",
+      "Accelerated Death Benefit for Critical Illness",
+      "Accelerated Death Benefit for Terminal Illness (up to 80% of face, max $250,000)",
+      "Waiver of Premium for Unemployment",
+      "Residential Damage Waiver of Premium",
+      "Accidental Death Benefit rider (up to $200,000)",
+      "Children's Term Insurance rider",
+      "Income Assured Option rider",
+      "Waiver of Premium rider (for disability)",
+      "Guaranteed maximum premium for first 25 years",
+      "Convertibility after policy year 2"
+    ]
+  },
+  {
+    "id": "kci_rop_30",
+    "name": "Signature Term Express ROP 30",
+    "type": "term_life",
+    "term_years": 30,
+    "coverage_min": 50000,
+    "coverage_max": 300000,
+    "premium_factor": 1.5,
+    "features": [
+      "30-year term with Return of Premium feature (cash value at end of level period equals total base premiums paid)",
+      "Accelerated Death Benefit for Chronic Condition",
+      "Accelerated Death Benefit for Critical Illness",
+      "Accelerated Death Benefit for Terminal Illness (up to 80% of face, max $250,000)",
+      "Waiver of Premium for Unemployment",
+      "Residential Damage Waiver of Premium",
+      "Accidental Death Benefit rider (up to $200,000)",
+      "Children's Term Insurance rider",
+      "Income Assured Option rider",
+      "Waiver of Premium rider (for disability)",
+      "Guaranteed maximum premium for first 30 years",
+      "Convertibility after policy year 2"
+    ]
+  }
+] 

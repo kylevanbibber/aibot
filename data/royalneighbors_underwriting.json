@@ -1,0 +1,471 @@
+{
+  "company_id": "royalneighbors",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "Royal Neighbors uses a unisex height/weight table (imperial units) to determine Preferred-class eligibility for Simplified Issue Whole Life. Heights are in feet/inches and weights in pounds (Preferred Max Weight).",
+      "tables": [
+        {
+          "title": "Preferred Build Chart (Heights vs. Max Weight)",
+          "measurement_unit": "imperial (height in feet/inches, weight in pounds)",
+          "columns": ["Height", "Preferred Max Weight"],
+          "rows": [
+            ["4'8\"", 175],
+            ["4'9\"", 181],
+            ["4'10\"", 194],
+            ["4'11\"", 194],
+            ["5'0\"", 200],
+            ["5'1\"", 207],
+            ["5'2\"", 214],
+            ["5'3\"", 221],
+            ["5'4\"", 228],
+            ["5'5\"", 235],
+            ["5'6\"", 243],
+            ["5'7\"", 250],
+            ["5'8\"", 258],
+            ["5'9\"", 265],
+            ["5'10\"", 273],
+            ["5'11\"", 281],
+            ["6'0\"", 289],
+            ["6'1\"", 297],
+            ["6'2\"", 305],
+            ["6'3\"", 314],
+            ["6'4\"", 322],
+            ["6'5\"", 330],
+            ["6'6\"", 339],
+            ["6'7\"", 348],
+            ["6'8\"", 357],
+            ["6'9\"", 366],
+            ["6'10\"", 375],
+            ["6'11\"", 384]
+          ]
+        }
+      ]
+    },
+    "medical_conditions": {
+      "description": "Royal Neighbors maps each medical condition to available risk classes (Preferred, Standard, Graded Death Benefit, Guaranteed Issue) based on recency and severity. 'A' indicates the class may be available, 'N/A' indicates not available.",
+      "conditions": [
+        {
+          "condition": "Activities of Daily Living (ADLs) – Needs assistance",
+          "guideline": "Applicants requiring ADL assistance are only eligible for Guaranteed Issue.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "AIDS / HIV",
+          "guideline": "Decline for all except Guaranteed Issue (GI may still be available).",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Alcohol or Drug Treatment > 3 years ago, no current use",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Alcohol or Drug Treatment within last 3 years, no current use",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "ALS (Lou Gehrig's disease)",
+          "guideline": "Only Guaranteed Issue (GI) is available; all other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Alzheimer's, Dementia, or Memory Loss",
+          "guideline": "Only Guaranteed Issue (GI) is available; all other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Amputation due to disease",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Aneurysm > 1 year ago",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Aneurysm within last year",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Anxiety",
+          "guideline": "Eligible for all classes (Preferred, Standard, Graded Death Benefit, Guaranteed Issue).",
+          "rate_classes": ["Preferred", "Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Arthritis",
+          "guideline": "Eligible for all classes (Preferred, Standard, Graded Death Benefit, Guaranteed Issue).",
+          "rate_classes": ["Preferred", "Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Asthma",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Basal Cell Skin Cancer",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Bipolar diagnosed < 1 year ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Bipolar diagnosed > 1 year ago",
+          "guideline": "Eligible for Preferred, Standard, Graded Death Benefit, or Guaranteed Issue.",
+          "rate_classes": ["Preferred", "Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Cancer, multiple occurrences",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Cancer treatment completed < 2 years ago",
+          "guideline": "Only Guaranteed Issue (GI) may be available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Cancer treatment completed 2–5 years ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Cancer treatment completed > 5 years ago",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Cardiomyopathy diagnosed > 2 years ago",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Cardiomyopathy diagnosed < 2 years ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Cholesterol Treatment",
+          "guideline": "Eligible for all classes (Preferred, Standard, Graded Death Benefit, Guaranteed Issue).",
+          "rate_classes": ["Preferred", "Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Chronic Bronchitis",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Chronic Kidney Disease (CKD) on dialysis",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Chronic Kidney Disease diagnosed < 1 year ago",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Chronic Kidney Disease diagnosed > 1 year ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Cirrhosis",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Congestive Heart Failure",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "COPD",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Coronary Artery Disease diagnosed > 2 years ago",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Coronary Artery Disease diagnosed < 2 years ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Currently Hospitalized (any treatment)",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Currently undergoing testing or evaluation for undiagnosed condition",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Defibrillator",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Depression",
+          "guideline": "Eligible for all classes (Preferred, Standard, Graded Death Benefit, Guaranteed Issue).",
+          "rate_classes": ["Preferred", "Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Diabetes without insulin",
+          "guideline": "Eligible for all classes (Preferred, Standard, Graded Death Benefit, Guaranteed Issue).",
+          "rate_classes": ["Preferred", "Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Diabetes with insulin (no complications)",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Diabetes with insulin plus complications (kidney/neuro)",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Emphysema",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Heart Attack < 2 years ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Heart Attack > 2 years ago",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Heart Surgery < 2 years ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Heart Surgery > 2 years ago",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Hepatitis B or C",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "HIV/AIDS (virus only)",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Hospitalized > 2 weeks in last year",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Hypertension",
+          "guideline": "Eligible for all classes (Preferred, Standard, Graded Death Benefit, Guaranteed Issue).",
+          "rate_classes": ["Preferred", "Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "In hospice, nursing home, long-term care",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Kidney failure diagnosed < 1 year ago",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Kidney failure diagnosed > 1 year ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Multiple Sclerosis",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Organ Transplant",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Oxygen – any use",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Pacemaker placed < 1 year ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Pacemaker placed > 1 year ago",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Parkinson's Disease",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Regular use of wheelchair or electric scooter",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Schizophrenia diagnosed < 1 year ago",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Schizophrenia diagnosed > 1 year ago",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Sickle Cell Anemia",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Stroke or TIA within last year",
+          "guideline": "Eligible for Graded Death Benefit or Guaranteed Issue; not Preferred or Standard.",
+          "rate_classes": ["GDB", "GI"]
+        },
+        {
+          "condition": "Stroke or TIA > 1 year ago",
+          "guideline": "Eligible for Standard, Graded Death Benefit, or Guaranteed Issue; not Preferred.",
+          "rate_classes": ["Standard", "GDB", "GI"]
+        },
+        {
+          "condition": "Systemic Lupus",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Terminal Illness",
+          "guideline": "Only Guaranteed Issue (GI) is available; other classes declined.",
+          "rate_classes": ["GI"]
+        },
+        {
+          "condition": "Wheelchair use temporary due to injury",
+          "guideline": "Eligible for all classes (Preferred, Standard, Graded Death Benefit, Guaranteed Issue).",
+          "rate_classes": ["Preferred", "Standard", "GDB", "GI"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "No laboratory, blood, or paramedical exam requirements are specified—this is a fully simplified-issue final expense model based solely on disease history and build-chart eligibility.",
+      "tables": []
+    },
+    "risk_classes": {
+      "description": "Royal Neighbors offers four underwriting classes for final expense products, determined by medical history, build-chart placement, and simplified issue questions.",
+      "classes": [
+        {
+          "name": "Preferred",
+          "criteria": [
+            "Height/weight must fall within Preferred column of build chart (page 19)",
+            "No disqualifying medical conditions within last 5 years (e.g., major depression requiring hospitalization, heart attack, cancer with treatment < 5 years)",
+            "Controlled hypertension, mild asthma, or other minor conditions may be allowed",
+            "Age 50–75, face amount $25,000–$40,000"
+          ]
+        },
+        {
+          "name": "Standard",
+          "criteria": [
+            "Height/weight must fall within Standard build limits (implied by pages 18–19)",
+            "No disqualifying conditions within last 2–5 years (e.g., resolved cancer > 5 years qualifies Preferred; within 2–5 years qualifies Standard)",
+            "Age 50–85, face amount $5,000–$40,000 (up to $40,000 for ages 50–85)"
+          ]
+        },
+        {
+          "name": "Graded Death Benefit (GDB)",
+          "criteria": [
+            "Recent diagnoses or treatments (within 1–2 years) such as cancer, heart attack, or chronic diseases qualify here",
+            "Pays 30% of face in Year 1, 70% in Year 2, 100% thereafter; accidental death always 100%",
+            "Age 50–85, face amount $5,000–$20,000"
+          ]
+        },
+        {
+          "name": "Guaranteed Issue (GI)",
+          "criteria": [
+            "No medical questions—acceptance regardless of health (except age and maximum face limits)",
+            "Pays 110% of earned premiums in Years 1–2 for natural causes, 100% face in Year 3+; accidental death always 100%",
+            "Age 50–80, face amount $3,000–$10,000"
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "Royal Neighbors differentiates Tobacco vs. Non-Tobacco primarily within Preferred and Standard classes. Guaranteed Issue bypasses medical questions entirely.",
+      "classifications": [
+        {
+          "type": "Non-Tobacco",
+          "classification": "Eligible for Preferred or Standard (subject to build-chart and medical history)."
+        },
+        {
+          "type": "Tobacco",
+          "classification": "Routed to Standard class (Preferred is not available for tobacco users)."
+        },
+        {
+          "type": "Guaranteed Issue",
+          "classification": "No tobacco questions—acceptance regardless of tobacco use, within GI age/face limits."
+        }
+      ]
+    },
+    "financial_underwriting": {
+      "description": "No income verification or financial multiples are required. Face amounts are limited by age and plan type (see 'Product Details' on page 4).",
+      "income_multiples": []
+    },
+    "special_considerations": {
+      "description": "Additional underwriting factors include build-chart referral, ownership requirements, and accelerated/non-accelerated application options.",
+      "factors": [
+        {
+          "factor": "Age Restrictions",
+          "guideline": "SIWL: ages 50–85 (Standard) or 50–75 (Preferred); GDB: ages 50–85; GI: ages 50–80. Applicants outside these bands are not eligible."
+        },
+        {
+          "factor": "Ownership/Beneficiary Relationships",
+          "guideline": "Must have insurable interest; see pages 15–17 for acceptable owner/beneficiary designations (e.g., spouse, child)."
+        },
+        {
+          "factor": "Application Methods",
+          "guideline": "Three options—e-App (instant decision, no face-to-face), Phone App (instant decision, no face-to-face), Paper App (underwriting review)."
+        },
+        {
+          "factor": "Accelerated Death Benefit Rider",
+          "guideline": "Available on SIWL and GDB (if face ≥ $7,000). Allows acceleration up to 75% of death benefit for terminal illness or nursing home confinement (page 6)."
+        },
+        {
+          "factor": "Accidental Death Benefit Rider",
+          "guideline": "Issue ages 50–70; pays full rider face if death due to accident within 180 days; terminates at age 80 (page 7)."
+        },
+        {
+          "factor": "Charitable Giving Rider",
+          "guideline": "No additional premium; pays 1% of face (max $1,000) upon death to a designated 501(c)(3) (page 7)."
+        },
+        {
+          "factor": "Grandchild Rider",
+          "guideline": "Issue ages 50–85; $60/year for unlimited grandchildren (age 90 days–17 years); conversion privileges through age 24, subject to age brackets (page 8)."
+        }
+      ]
+    }
+  }
+} 

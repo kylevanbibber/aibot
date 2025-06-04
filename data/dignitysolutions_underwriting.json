@@ -1,0 +1,206 @@
+{
+  "company_id": "dignitysolutions",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "Dignity Solutions uses a unisex height/weight chart to determine plan eligibility (Immediate, Graded, or Return of Premium) for applicants ages 50–85. Heights are in feet/inches and weights in pounds.",
+      "tables": [
+        {
+          "title": "Unisex Build Chart (Ages 50–85)",
+          "measurement_unit": "imperial (height in feet/inches, weight in pounds)",
+          "columns": [
+            "Height",
+            "Max Weight – Immediate Plan",
+            "Max Weight – Graded Plan",
+            "Max Weight – ROP Plan",
+            "Min Weight – Immediate Plan",
+            "Min Weight – ROP Plan"
+          ],
+          "rows": [
+            ["4'5\"**", 173, "174–180", "181–190", 82, "77–81"],
+            ["4'6\"**", 180, "182–188", "189–198", 84, "79–83"],
+            ["4'7\"**", 187, "189–196", "197–206", 86, "81–85"],
+            ["4'8\"",    197, "198–204", "205–214", 88, "83–87"],
+            ["4'9\"",    204, "205–212", "213–222", 90, "85–89"],
+            ["4'10\"",   211, "212–220", "221–230", 92, "87–91"],
+            ["4'11\"",   218, "219–228", "229–238", 94, "89–93"],
+            ["5'0\"",    225, "226–236", "237–246", 96, "91–95"],
+            ["5'1\"",    233, "234–244", "245–254", 99, "94–98"],
+            ["5'2\"",    241, "242–252", "253–262", 101, "96–100"],
+            ["5'3\"",    248, "249–260", "261–271", 105, "100–104"],
+            ["5'4\"",    256, "257–268", "269–280", 107, "102–106"],
+            ["5'5\"",    264, "265–276", "277–288", 110, "105–109"],
+            ["5'6\"",    273, "274–285", "286–297", 112, "107–111"],
+            ["5'7\"",    281, "282–294", "295–306", 116, "111–115"],
+            ["5'8\"",    289, "290–303", "304–316", 119, "114–118"],
+            ["5'9\"",    298, "299–312", "313–325", 123, "118–122"],
+            ["5'10\"",   307, "308–321", "322–335", 126, "121–125"],
+            ["5'11\"",   315, "316–330", "331–344", 131, "126–130"],
+            ["6'0\"",    324, "325–339", "340–354", 135, "130–134"],
+            ["6'1\"",    334, "335–349", "350–364", 139, "134–138"],
+            ["6'2\"",    343, "344–359", "360–374", 142, "137–141"],
+            ["6'3\"",    352, "353–368", "369–384", 146, "141–145"],
+            ["6'4\"",    361, "362–378", "379–394", 149, "144–148"],
+            ["6'5\"",    370, "371–388", "389–404", 152, "147–151"],
+            ["6'6\"",    379, "380–398", "399–414", 156, "151–155"],
+            ["6'7\"",    388, "398–408", "409–424", 160, "155–159"],
+            ["6'8\"",    397, "398–418", "419–434", 164, "159–163"],
+            ["6'9\"",    406, "407–428", "429–440", 168, "162–167"]
+          ]
+        }
+      ]
+    },
+    "medical_conditions": {
+      "description": "Dignity Solutions categorizes medical impairments by severity and recency, determining eligibility for Immediate, Graded, or Return of Premium death benefit plans. Below are representative conditions and their underwriting impact.",
+      "conditions": [
+        {
+          "condition": "Diabetes (Type I or II)",
+          "guideline": "Any insulin use or treatment for diabetic complications triggers Return of Premium eligibility (answer 'Yes' to question 4 on application). Non‐insulin–treated, well‐controlled Type II may qualify for Immediate if no complications.",
+          "rate_classes": ["Immediate", "Return of Premium", "No Coverage"]
+        },
+        {
+          "condition": "Hypertension (High Blood Pressure)",
+          "guideline": "If on antihypertensive medication and controlled, may qualify for Immediate. Uncontrolled or complicated hypertension may lead to Graded or Return of Premium.",
+          "rate_classes": ["Immediate", "Graded", "Return of Premium"]
+        },
+        {
+          "condition": "Coronary Artery Disease / Angina / Heart Attack",
+          "guideline": "Any history of angina or heart attack within past 2 years = Return of Premium (question 7a). If >2 but ≤3 years = Graded (question 8a). >3 years may qualify for Immediate or Graded based on other factors.",
+          "rate_classes": ["Immediate", "Graded", "Return of Premium", "No Coverage"]
+        },
+        {
+          "condition": "Cancer (excluding certain basal cell skin cancers)",
+          "guideline": "Active or metastatic cancer = No Coverage. Cancer diagnosed/treated within past 2 years = Return of Premium (question 7c). Diagnosed/treated >2 but ≤3 years = Graded (question 8b). >3 years may qualify for Immediate.",
+          "rate_classes": ["Immediate", "Graded", "Return of Premium", "No Coverage"]
+        },
+        {
+          "condition": "Chronic Obstructive Pulmonary Disease (COPD) / Emphysema",
+          "guideline": "Treatment/hospitalization within past 2 years = Return of Premium (question 7a). Within past 2–3 years = Graded (question 8b). >3 years may qualify for Immediate if stable.",
+          "rate_classes": ["Immediate", "Graded", "Return of Premium"]
+        },
+        {
+          "condition": "Alcohol or Substance Abuse",
+          "guideline": "Any alcohol/substance abuse within past 2 years = Return of Premium (question 7d). If >2 but ≤3 years = Graded. >3 years may qualify for Immediate if no other issues.",
+          "rate_classes": ["Immediate", "Graded", "Return of Premium"]
+        },
+        {
+          "condition": "Alzheimer's / Dementia",
+          "guideline": "Any medically diagnosed dementia = No Coverage (question 2).",
+          "rate_classes": ["No Coverage"]
+        },
+        {
+          "condition": "AIDS / HIV",
+          "guideline": "Any medically diagnosed AIDS/HIV = No Coverage (question 3).",
+          "rate_classes": ["No Coverage"]
+        },
+        {
+          "condition": "Chronic Kidney Disease / Dialysis",
+          "guideline": "Kidney dialysis or failure = No Coverage. Early‐stage kidney disease not on dialysis may be Return of Premium (question 5).",
+          "rate_classes": ["Immediate", "Return of Premium", "No Coverage"]
+        },
+        {
+          "condition": "Stroke / Transient Ischemic Attack (TIA)",
+          "guideline": "Stroke treated within past 2 years = Return of Premium (question 7a). Within 2–3 years = Graded (question 8a). >3 years may qualify for Immediate if stable.",
+          "rate_classes": ["Immediate", "Graded", "Return of Premium"]
+        },
+        {
+          "condition": "Chronic Liver Disease / Cirrhosis",
+          "guideline": "Diagnosed/treated within past 2 years = Return of Premium (question 7a). 2–3 years = Graded (question 8b). >3 years may qualify for Immediate if stable.",
+          "rate_classes": ["Immediate", "Graded", "Return of Premium"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "Dignity Solutions is a fully simplified‐issue product. No blood, urine, or paramedical exams are required. Underwriting relies on a telephone interview, MIB and prescription database checks, and build chart eligibility.",
+      "tables": []
+    },
+    "risk_classes": {
+      "description": "Eligibility is determined by the health question responses and build chart placement into one of three death benefit plans—Immediate, Graded, or Return of Premium. These plans function as de facto risk classes based on medical history.",
+      "classes": [
+        {
+          "name": "Immediate Death Benefit",
+          "criteria": [
+            "Answer 'No' to all health questions 1–8 on the application",
+            "Build chart weight/height must fall within Immediate column",
+            "Age 50–75: up to $50,000 face; Age 76–85: up to $25,000 face",
+            "No disqualifying medical condition in past 3 years (e.g., untreated cancer, recent heart attack, active HIV/AIDS)",
+            "Tobacco use within past 12 months may still qualify if no other health issues"
+          ]
+        },
+        {
+          "name": "Graded Death Benefit",
+          "criteria": [
+            "Answer 'No' to questions 1–7 and 'Yes' to question 8 (medical condition flags)",
+            "Build chart weight/height within Graded column",
+            "Pays 30% of face year 1, 70% year 2, 100% thereafter (100% for accidental death any year)",
+            "Face amounts $2,500–$25,000 (all ages 50–85)",
+            "Recent medical issues (within 2–3 years) such as controlled hypertension, past stroke, or mild COPD qualify"
+          ]
+        },
+        {
+          "name": "Return of Premium (ROP) Death Benefit",
+          "criteria": [
+            "Answer 'No' to questions 1–3 and 'Yes' to any of questions 4–7 (e.g., diabetes complications, recent stroke, substance abuse)",
+            "Build chart weight/height within ROP column",
+            "Pays back premiums plus interest if death occurs during graded period (2 years if ≥65; 3 years if <65), 100% thereafter; 100% for accidental death",
+            "Face amounts $2,500–$25,000 (ages 50–85)",
+            "Applicants with controlled but still relevant medical histories in past 2 years (e.g., treated cancer, stroke, or dialysis candidates) qualify here"
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "Tobacco use is addressed via health question 7 on the application: "During the past 12 months have you used tobacco in any form (excluding occasional cigar/pipe use)?" Answering 'Yes' routes the applicant to the ROP plan unless other criteria apply.",
+      "classifications": [
+        {
+          "type": "No Tobacco Use (past 12 months)",
+          "classification": "Eligible for Immediate or Graded Death Benefit if other health criteria met"
+        },
+        {
+          "type": "Any Tobacco Use (past 12 months)",
+          "classification": "Directed to Return of Premium Death Benefit plan"
+        },
+        {
+          "type": "Occasional Cigar/Pipe Use (≤12/year)",
+          "classification": "Considered non‐tobacco for build chart; still subject to health questions"
+        }
+      ]
+    },
+    "financial_underwriting": {
+      "description": "Dignity Solutions does not require income verification or financial justification. Face amounts are flat (maximum $50,000 or $25,000 by age band) and premiums are determined solely by age, plan type, and tobacco status.",
+      "income_multiples": []
+    },
+    "special_considerations": {
+      "description": "Other underwriting factors include age bands (50–85), prescription‐database checks, and suitability of plan based on build chart. Additional considerations are note-worthy medical and lifestyle factors.",
+      "factors": [
+        {
+          "factor": "Age Restrictions",
+          "guideline": "Applicants must be age 50–85 (last birthday) to apply."
+        },
+        {
+          "factor": "Prescription Database Check",
+          "guideline": "Applicants aged 71–85 undergo a prescription database check. If not found in database, a telephone interview is required unless applying for ROP plan."
+        },
+        {
+          "factor": "Telephone Interview",
+          "guideline": "Not required for ages 50–70; for ages 71–85, only if payor is not close relative or not found in prescription database (except ROP applicants)."
+        },
+        {
+          "factor": "No Exam Option",
+          "guideline": "No medical exam or lab work. Underwriting is based on telephone interview, build chart, prescription and MIB checks."
+        },
+        {
+          "factor": "Build Chart Referral",
+          "guideline": "Heights 4'5\"–4'7\" are not programmed in the mobile decision engine and must be referred to Home Office underwriter."
+        },
+        {
+          "factor": "Rider Availability",
+          "guideline": "No additional medical underwriting for no-cost riders (e.g., Terminal Illness Accelerated Death Benefit). Availability varies by state and plan."
+        },
+        {
+          "factor": "Funeral Home Beneficiary Prohibition",
+          "guideline": "Funeral homes are not acceptable beneficiaries; beneficiaries must have insurable interest (family or trust)."
+        }
+      ]
+    }
+  }
+} 

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Underwriting Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>Insurance Underwriting Assistant</h1>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="client-form-container" id="client-form-container">
+                <h2>Client Information</h2>
+                <form id="client-info-form" class="client-info-form">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sex">Sex</label>
+                                <select id="sex" name="sex" required>
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" name="age" min="18" max="100" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <select id="state" name="state">
+                                    <option value="">Select State</option>
+                                    <!-- States will be populated via JavaScript -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Tobacco Status</label>
+                                <div class="tobacco-status-options">
+                                    <label class="checkbox-label">
+                                        <input type="radio" name="tobacco" value="non-smoker" checked> Non-smoker
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="radio" name="tobacco" value="smoker"> Smoker
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="radio" name="tobacco" value="former-smoker"> Former Smoker
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="height">Height (inches)</label>
+                                <input type="number" id="height" name="height" min="36" max="96">
+                            </div>
+                            <div class="form-group">
+                                <label for="weight">Weight (lbs)</label>
+                                <input type="number" id="weight" name="weight" min="50" max="500">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label>Policy Type Preference</label>
+                                <div class="policy-type-preference">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="policy_type[]" value="whole_life" checked> Whole Life
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="policy_type[]" value="term_life" checked> Term Life
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="policy_type[]" value="final_expense"> Final Expense
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label>Companies Included in Search</label>
+                                <div class="companies-container" id="companies-container">
+                                    <p class="companies-info">Loading companies...</p>
+                                    <div class="companies-list" id="companies-list"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label>Coverage Range</label>
+                                <div class="coverage-range-container">
+                                    <div class="coverage-range-display">
+                                        <span>Min: <span id="coverage-min-value">$100,000</span></span>
+                                        <span>Max: <span id="coverage-max-value">$500,000</span></span>
+                                    </div>
+                                    <div class="coverage-sliders">
+                                        <div class="slider-wrapper">
+                                            <label for="coverage-min">Minimum Coverage</label>
+                                            <input type="range" id="coverage-min" name="coverage-min" min="10000" max="5000000" step="10000" value="100000" class="slider">
+                                        </div>
+                                        <div class="slider-wrapper">
+                                            <label for="coverage-max">Maximum Coverage</label>
+                                            <input type="range" id="coverage-max" name="coverage-max" min="10000" max="5000000" step="10000" value="500000" class="slider">
+                                        </div>
+                                    </div>
+                                    <div class="slider-labels">
+                                        <span>$10,000</span>
+                                        <span>$5,000,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="citizenship">Citizenship</label>
+                                <select id="citizenship" name="citizenship">
+                                    <option value="us-citizen">US Citizen</option>
+                                    <option value="permanent-resident">Permanent Resident</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Medical Information</h3>
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label>Medical Conditions</label>
+                                <div class="medical-conditions" id="medical-conditions">
+                                    <div class="condition-item">
+                                        <select name="condition[]" class="condition-select">
+                                            <option value="">Select Condition</option>
+                                            <option value="none">None</option>
+                                            <option value="high-blood-pressure">High Blood Pressure</option>
+                                            <option value="diabetes">Diabetes</option>
+                                            <option value="heart-disease">Heart Disease</option>
+                                            <option value="cancer">Cancer</option>
+                                            <option value="stroke">Stroke</option>
+                                            <option value="copd">COPD</option>
+                                            <option value="asthma">Asthma</option>
+                                            <option value="other">Other (specify below)</option>
+                                        </select>
+                                        <input type="text" name="condition-details[]" placeholder="Details (year diagnosed, severity, etc.)" class="condition-details">
+                                        <button type="button" class="remove-condition"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="add-condition" class="add-button">
+                                    <i class="fas fa-plus"></i> Add Condition
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label>Prescriptions</label>
+                                <div class="prescriptions" id="prescriptions">
+                                    <div class="prescription-item">
+                                        <input type="text" name="prescription[]" placeholder="Medication name">
+                                        <input type="text" name="prescription-dosage[]" placeholder="Dosage">
+                                        <input type="text" name="prescription-frequency[]" placeholder="Frequency">
+                                        <button type="button" class="remove-prescription"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="add-prescription" class="add-button">
+                                    <i class="fas fa-plus"></i> Add Prescription
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label>Surgeries</label>
+                                <div class="surgeries" id="surgeries">
+                                    <div class="surgery-item">
+                                        <input type="text" name="surgery[]" placeholder="Surgery type">
+                                        <input type="month" name="surgery-date[]" placeholder="Date">
+                                        <button type="button" class="remove-surgery"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="add-surgery" class="add-button">
+                                    <i class="fas fa-plus"></i> Add Surgery
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Criminal History</h3>
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="criminal-history">Do you have any criminal history?</label>
+                                <select id="criminal-history" name="criminal-history" required>
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="criminal-history-details" class="hidden">
+                            <div class="form-row">
+                                <div class="form-group full-width">
+                                    <label for="criminal-details">Please provide details</label>
+                                    <textarea id="criminal-details" name="criminal-details" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" id="get-recommendations" class="primary-button">
+                            Get Recommendations
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="policy-recommendations hidden" id="policy-recommendations">
+                <div class="recommendations-header">
+                    <h2>Policy Recommendations</h2>
+                    <button id="back-to-form-top" class="back-button">
+                        <i class="fas fa-arrow-left"></i> Back to Form
+                    </button>
+                </div>
+                <div class="recommendations-list" id="recommendations-list">
+                    <!-- Policy recommendations will be displayed here -->
+                </div>
+                <button id="back-to-form" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Form
+                </button>
+            </div>
+
+            <div class="chat-container hidden" id="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message assistant-message">
+                        <div class="message-content">
+                            <p>Hello! I'm your insurance underwriting assistant. I'll help you find the best policy for your needs and determine what you can get approved for. Let's get started! What's your name?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <textarea id="chat-input" placeholder="Type your message here..." rows="1"></textarea>
+                    <button id="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <button id="switch-to-form" class="switch-button">
+                    <i class="fas fa-wpforms"></i> Switch to Form
+                </button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 258 Collective</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 

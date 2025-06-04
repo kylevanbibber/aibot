@@ -1,0 +1,36 @@
+[
+  {
+    "id": "corebridgefinancial_simplinowlegacy",
+    "name": "SimpliNow Legacy (Graded Death Benefit)",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 2500,
+    "coverage_max": 25000,
+    "premium_factor": 2.5,
+    "features": [
+      "Simplified-issue whole life final expense insurance for ages 50–80",
+      "Instant electronic application with telephonic health questionnaire (no exam)",
+      "Graded death benefit: 110% of premiums in years 1–2; full face thereafter",
+      "Annual policy fee $12 (page 9)",
+      "No paramedical exam—instant decision via SimpliNow Quoter or teleservice center",
+      "Riders (available at issue): Accelerated Death Benefit, Children's Term Rider, Grandchild Rider, Waiver of Premium (in agent kit)"
+    ]
+  },
+  {
+    "id": "corebridgefinancial_simplinowlegacymax",
+    "name": "SimpliNow Legacy Max (Level Death Benefit)",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 2500,
+    "coverage_max": 25000,
+    "premium_factor": 2.5,
+    "features": [
+      "Simplified-issue whole life final expense insurance for ages 50–80",
+      "Instant electronic application with telephonic health questionnaire (no exam)",
+      "Level death benefit: full face amount immediately in all years",
+      "Annual policy fee $36 (page 9)",
+      "No paramedical exam—instant decision via SimpliNow Quoter or teleservice center",
+      "Riders (available at issue): Accelerated Death Benefit, Children's Term Rider, Grandchild Rider, Waiver of Premium (in agent kit)"
+    ]
+  }
+] 

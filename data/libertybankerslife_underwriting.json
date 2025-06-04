@@ -1,0 +1,134 @@
+{
+  "company_id": "libertybankerslife",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "Liberty Bankers uses a unisex height/weight build chart (imperial units) to assign one of three simplified‐issue classifications for Final Expense coverage: SIMPL Preferred, SIMPL Standard, or Modified Whole Life (MWL). Any weight outside the "ALL" (minimum) and MWL (maximum) columns results in immediate decline.",
+      "tables": [
+        {
+          "title": "Final Expense Build Chart",
+          "measurement_unit": "imperial (height in feet/inches, weight in pounds)",
+          "columns": [
+            "Height (ft'in")",
+            "Inches",
+            "Min Weight (ALL)",
+            "Max Weight (SIMPL Pref)",
+            "Max Weight (SIMPL Std)",
+            "Max Weight (MWL)"
+          ],
+          "rows": [
+            ["4'5\"", 53, 70, 186, 194, 230],
+            ["4'6\"", 54, 72, 194, 201, 238],
+            ["4'7\"", 55, 75, 201, 209, 247],
+            ["4'8\"", 56, 78, 208, 216, 256],
+            ["4'9\"", 57, 80, 214, 223, 266],
+            ["4'10\"", 58, 83, 221, 231, 277],
+            ["4'11\"", 59, 86, 228, 239, 288],
+            ["5'0\"", 60, 89, 235, 247, 299],
+            ["5'1\"", 61, 92, 243, 255, 310],
+            ["5'2\"", 62, 95, 251, 263, 321],
+            ["5'3\"", 63, 98, 258, 270, 331],
+            ["5'4\"", 64, 101, 266, 279, 341],
+            ["5'5\"", 65, 105, 274, 288, 350],
+            ["5'6\"", 66, 108, 282, 297, 360],
+            ["5'7\"", 67, 111, 290, 306, 372],
+            ["5'8\"", 68, 115, 297, 314, 384],
+            ["5'9\"", 69, 118, 305, 323, 396],
+            ["5'10\"", 70, 121, 313, 332, 408],
+            ["5'11\"", 71, 125, 321, 342, 419],
+            ["6'0\"", 72, 129, 330, 352, 430],
+            ["6'1\"", 73, 132, 338, 361, 440],
+            ["6'2\"", 74, 136, 347, 371, 451],
+            ["6'3\"", 75, 140, 356, 381, 462],
+            ["6'4\"", 76, 143, 366, 391, 473],
+            ["6'5\"", 77, 147, 376, 401, 484],
+            ["6'6\"", 78, 151, 385, 410, 494],
+            ["6'7\"", 79, 155, 395, 420, 506],
+            ["6'8\"", 80, 159, 406, 431, 520],
+            ["6'9\"", 81, 163, 416, 442, 534],
+            ["6'10\"", 82, 167, 426, 452, 546],
+            ["6'11\"", 83, 171, 436, 463, 559]
+          ]
+        }
+      ]
+    },
+    "medical_conditions": {
+      "description": "Underwriting is determined via a three‐part health questionnaire. Any "Yes" in Part 1 triggers automatic decline. "Yes" responses in Part 2 or Part 3 (depending on recency/severity) may route the applicant to Modified Whole Life (MWL). If all questions in Parts 1 and 2 are "No," then Part 3 must be answered; if all Part 3 answers are also "No," the applicant may qualify for SIMPL Preferred.",
+      "conditions": [
+        {
+          "condition": "Part 1 – Automatic Decline Conditions",
+          "guideline": [
+            "Ever diagnosed/treated/tested positive for CHF, cardiomyopathy, memory loss/Alzheimer's/dementia, heart defibrillator implant, two or more internal cancers, or terminal illness (expected to result in death within 24 months) → Decline.",
+            "Ever had organ transplant (other than corneal), bone marrow or stem cell transplant, kidney failure/dialysis, muscular dystrophy, mental incapacity, ALS (Lou Gehrig's), Down's syndrome, cystic fibrosis, pulmonary fibrosis, or Huntington's disease → Decline.",
+            "Diabetes diagnosed at age 9 or younger → Decline.",
+            "Any history of AIDS, AIDS‐Related Complex, HIV, or other immune disorder → Decline.",
+            "Within the prior 2 years, diagnosed/treated/advised for uncontrolled diabetes, uncontrolled high blood pressure, diabetic coma/insulin shock, diabetic amputation, schizophrenia, alcohol/drug abuse, illegal drug use, or prescription dependency → Decline.",
+            "Within the last 12 months, confined to a hospital > 5 days total; advised to have surgery/hospitalization still pending; used oxygen for a medical condition; unable to care for self; bedridden at home, nursing home, hospice, long‐term care, or assisted living facility → Decline."
+          ],
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Part 2 – Potential MWL (Modified Whole Life)",
+          "guideline": [
+            "Within past 3 years, diagnosed/treated/tested positive for lymphoma, leukemia, or any non‐basal‐cell cancer (including melanoma) treated with chemotherapy or radiation → MWL (if available by state).",
+            "Within past 2 years, diagnosed/treated/advised for angina, any heart or circulatory surgery/disease, heart valve disorder, heart attack, or received a pacemaker/stent → MWL (if state‐eligible).",
+            "Within past 2 years, experienced stroke (excluding TIA/mini‐stroke) or paralysis → MWL (state rules apply).",
+            "Within past 2 years, diagnosed/treated/advised for aneurysm, brain tumor, or sickle cell anemia → MWL (state rules).",
+            "Within past 2 years, diabetic complications (nephropathy, neuropathy, retinopathy), chronic hepatitis or hepatitis C, cirrhosis of the liver, chronic pancreatitis, kidney disease, or Systemic Lupus (SLE) → MWL (subject to state availability).",
+            "Within past 2 years, diagnosed with multiple sclerosis, Parkinson's disease, or required walker/wheelchair/electric scooter due to chronic illness → MWL (state eligibility).",
+            "Within past 2 years, pled guilty to or been convicted of a felony or misdemeanor or have a pending charge → MWL (state permitting)."
+          ],
+          "rate_classes": ["MWL (Modified Whole Life)"]
+        },
+        {
+          "condition": "Part 3 – SIMPL Preferred Determination",
+          "guideline": [
+            "If any "Yes" in Part 2, applicant may still qualify for MWL (if available). If all Part 2 answers are "No," proceed:","Part 3 "Yes" to COPD, chronic bronchitis, emphysema, irregular heartbeat, atrial fibrillation, peripheral vascular disease or peripheral artery disease → MWL (state rules).",
+            "Part 3 "Yes" to insulin‐dependent diabetes → MWL (state rules).",
+            "Part 3 "Yes" to epileptic seizures or Transient Ischemic Attack (TIA/mini‐stroke) within past 2 years → MWL (state rules).",
+            "If all Part 3 answers are "No," applicant may qualify for SIMPL Preferred."
+          ],
+          "rate_classes": ["SIMPL Preferred"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "No laboratory tests, bloodwork, or paramedical exam requirements are specified. Underwriting decisions rely solely on the telephone‐based health questionnaire (Parts 1–3) and any available prescription‐history checks.",
+      "tables": []
+    },
+    "risk_classes": {
+      "description": "There are three possible simplified‐issue outcomes based on the completed health questionnaire:",
+      "classes": [
+        {
+          "name": "Decline",
+          "criteria": [
+            "Any "Yes" answer in Part 1 → automatic Decline (no coverage)."
+          ]
+        },
+        {
+          "name": "MWL (Modified Whole Life)",
+          "criteria": [
+            "Any qualifying "Yes" in Part 2 or Part 3 (within specified lookback periods) → applicant may be offered Modified Whole Life, if that option is available in the applicant's state."
+          ]
+        },
+        {
+          "name": "SIMPL Preferred",
+          "criteria": [
+            "All Part 1 answers "No" AND all Part 2 answers "No" AND all Part 3 answers "No" → qualifies for SIMPL Preferred simplified‐issue telephonic approval."
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "This agent guide does not include a separate tobacco classification grid. Tobacco and nicotine use (cigarettes, cigars, pipe, chewing tobacco, vaping, etc.) would be captured under the "alcohol/drug abuse" or similar questions in Parts 1–3 during the phone interview. No explicit nicotine tabulator is provided here.",
+      "classifications": []
+    },
+    "financial_underwriting": {
+      "description": "No income verification or financial multiples are required at application. Premium is collected by bank draft or check upon issue. Face‐amount suitability is confirmed during the telephonic interview.",
+      "income_multiples": []
+    },
+    "special_considerations": {
+      "description": "Aside from the health questions and build chart, the guide does not specify other special underwriting factors (e.g., occupation, travel, etc.). Any additional issues would surface during the PreCheck or UW Check smartphone tool interaction.",
+      "factors": []
+    }
+  }
+} 

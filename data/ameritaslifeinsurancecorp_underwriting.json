@@ -1,0 +1,591 @@
+{
+  "company_id": "ameritaslifeinsurancecorp",
+  "underwriting_criteria": {
+    "build_chart": {
+      "description": "Ameritas uses a height/weight table (imperial units) to determine maximum allowable weight for various fully underwritten risk classes (Preferred Plus Nontobacco, Preferred Nontobacco, Select Nontobacco, Standard Nontobacco).",
+      "tables": [
+        {
+          "title": "Height and Maximum Weight Chart (Preferred/Select/Standard Classes)",
+          "measurement_unit": "imperial (height in feet/inches, weight in pounds)",
+          "columns": [
+            "Height",
+            "Preferred Plus Nontobacco",
+            "Preferred Nontobacco",
+            "Select Nontobacco",
+            "Standard Nontobacco"
+          ],
+          "rows": [
+            ["4'7\"", 121, 133, 142, 161],
+            ["4'8\"", 125, 138, 147, 167],
+            ["4'9\"", 130, 143, 152, 173],
+            ["4'10\"", 134, 148, 157, 179],
+            ["4'11\"", 139, 153, 163, 185],
+            ["5'0\"", 145, 158, 168, 191],
+            ["5'1\"", 149, 164, 174, 198],
+            ["5'2\"", 154, 169, 180, 205],
+            ["5'3\"", 159, 175, 186, 211],
+            ["5'4\"", 164, 180, 192, 218],
+            ["5'5\"", 168, 186, 198, 225],
+            ["5'6\"", 173, 192, 204, 232],
+            ["5'7\"", 178, 196, 210, 239],
+            ["5'8\"", 184, 203, 217, 246],
+            ["5'9\"", 190, 209, 223, 253],
+            ["5'10\"", 195, 216, 230, 261],
+            ["5'11\"", 201, 222, 236, 268],
+            ["6'0\"", 207, 228, 243, 276],
+            ["6'1\"", 213, 235, 250, 284],
+            ["6'2\"", 218, 241, 257, 292],
+            ["6'3\"", 224, 248, 264, 299],
+            ["6'4\"", 230, 254, 271, 308],
+            ["6'5\"", 236, 261, 278, 316],
+            ["6'6\"", 242, 268, 285, 324],
+            ["6'7\"", 248, 275, 292, 332],
+            ["6'8\"", 254, 281, 300, 341],
+            ["6'9\"", 261, 289, 307, 349],
+            ["6'10\"", 267, 296, 315, 358],
+            ["6'11\"", 274, 303, 323, 367]
+          ]
+        }
+      ]
+    },
+    "medical_conditions": {
+      "description": "Ameritas organizes medical impairments into decision tables indicating whether an applicant is Not Rated (preferred), Rated, or Declined based on severity, control, and time since diagnosis. Below are representative conditions and their underwriting impact.",
+      "conditions": [
+        {
+          "condition": "Alcohol Treatment History",
+          "guideline": "Current alcohol use = Rated. Alcoholism in remission (≥2 years abstinent) = Not Rated or Rated depending on overall profile; if <2 years, Decline.",
+          "rate_classes": ["Not Rated", "Rated", "Decline"]
+        },
+        {
+          "condition": "Anxiety Disorders",
+          "guideline": "Mild or well-controlled anxiety = Not Rated. Other anxiety requiring medication or with work disruption = Rated or Decline based on severity.",
+          "rate_classes": ["Not Rated", "Rated", "Decline"]
+        },
+        {
+          "condition": "Arrhythmias",
+          "guideline": "Paroxysmal atrial fibrillation or infrequent PVCs (skipped beats) = Not Rated if controlled; chronic atrial fibrillation or frequent PVCs = Decline.",
+          "rate_classes": ["Not Rated", "Decline"]
+        },
+        {
+          "condition": "Asthma",
+          "guideline": "Very mild, no hospitalization, no daily meds = Not Rated. All other asthma cases (hospitalizations, daily meds) = Rated or Decline based on severity.",
+          "rate_classes": ["Not Rated", "Rated", "Decline"]
+        },
+        {
+          "condition": "Cancer",
+          "guideline": "Basal cell carcinoma or other benign tumors = Not Rated if >12 months ago. Melanoma in situ, seminoma = Not Rated. All other malignancies postponed/granted only after 2–5 years of remission; metastatic disease never rated.",
+          "rate_classes": ["Not Rated", "Rated", "Decline"]
+        },
+        {
+          "condition": "Coronary Artery Disease (CAD)",
+          "guideline": "Any CAD event (heart attack, bypass, angioplasty) = Decline or Rated based on time since event and treatment. Stable CAD >1 year may be Rated.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Crohn's Disease",
+          "guideline": "Active or complicated Crohn's = Decline. Mild, in remission (≥12 months) may be Rated.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Dementia",
+          "guideline": "Any medically diagnosed dementia = Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Depression",
+          "guideline": "Controlled on medication = Rated or Decline depending on severity. Hospitalized or severe depression = Decline.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Diabetes Mellitus Type I",
+          "guideline": "Well-controlled Type I (no end-organ damage, age >25) = Rated; poor control or complications = Decline.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Diabetes Mellitus Type II",
+          "guideline": "Onset before age 31 (any insulin) = Decline. Onset 31–45 any insulin = Decline. Onset 46–65 any insulin = Rated. Onset over 65 well-controlled (no complications) = Not Rated or Rated. All diabetic kidney disease = Decline.",
+          "rate_classes": ["Not Rated", "Rated", "Decline"]
+        },
+        {
+          "condition": "Drug Addiction (cocaine, heroin, etc.)",
+          "guideline": "Postpone 3 years from last use (if ≥3 years abstinent, may be Rated). Active use or <3 years remission = Decline.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Emphysema / COPD",
+          "guideline": "Any emphysema = Rated or Decline depending on severity and oxygen use; mild stable cases may be Rated.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Epilepsy",
+          "guideline": "Any epilepsy = Rated or Decline based on frequency and medication; stable single seizures >1 year may be Rated.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Gastric Stapling / Bypass",
+          "guideline": "Postpone until stable ≥12 months; if stable and no complications, may be Rated. Otherwise, Decline.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Heart Attack",
+          "guideline": "Any MI (myocardial infarction) within past 12 months = Decline. >12 months and stable on medication = Rated.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "HIV / AIDS",
+          "guideline": "Any HIV infection or AIDS = Decline.",
+          "rate_classes": ["Decline"]
+        },
+        {
+          "condition": "Hyperlipidemia (High Cholesterol)",
+          "guideline": "Cholesterol <240, Chol/HDL <6.5, controlled on meds = Not Rated. Cholesterol 240–270 or meds = Rated. >270 uncontrolled = Decline.",
+          "rate_classes": ["Not Rated", "Rated", "Decline"]
+        },
+        {
+          "condition": "Hypertension (High Blood Pressure)",
+          "guideline": "Well controlled (≤135/85 age ≤60 or ≤140/85 age 61+) = Not Rated. Moderately controlled (≤150/90) = Rated. Poorly controlled >150/90 = Decline.",
+          "rate_classes": ["Not Rated", "Rated", "Decline"]
+        },
+        {
+          "condition": "Marijuana Use",
+          "guideline": "Medical marijuana use under supervision = Not Rated. Recreational moderate use (intermittent) = Rated or Standard Nontobacco. Heavy use = Tobacco rates or Decline if severe.",
+          "rate_classes": ["Not Rated", "Rated", "Decline"]
+        },
+        {
+          "condition": "Multiple Sclerosis (MS)",
+          "guideline": "Stable, single or multiple episodes ≥12 months ago = Rated. All other MS cases = Decline.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Pacemaker Implanted",
+          "guideline": "Within 3 months of implantation = Rated or Decline. >3 months and stable = Rated or Not Rated based on overall cardiac profile.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Parkinson's Disease",
+          "guideline": "Stable, early-stage cases = Rated. All other Parkinson's cases = Decline.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Rheumatoid Arthritis",
+          "guideline": "Rare or no treatment, minimal joint involvement = Rated. Methotrexate/Prednisone use or disability from RA = Decline.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Sleep Apnea",
+          "guideline": "Successfully treated, compliant with CPAP and no comorbidities = Not Rated. Untreated or severe = Rated or Decline.",
+          "rate_classes": ["Not Rated", "Rated", "Decline"]
+        },
+        {
+          "condition": "Stroke / Transient Ischemic Attack (TIA)",
+          "guideline": "Stroke or TIA within past 12 months = Decline. 12–24 months ago = Rated. >24 months and stable = Rated or possibly Not Rated if minimal residual effects.",
+          "rate_classes": ["Rated", "Decline"]
+        },
+        {
+          "condition": "Ulcerative Colitis",
+          "guideline": "Active disease within past 12 months = Decline. Remission ≥12 months on no systemic steroids = Rated.",
+          "rate_classes": ["Rated", "Decline"]
+        }
+      ]
+    },
+    "laboratory_requirements": {
+      "description": "Ameritas determines required medical tests based on issue age and total coverage amount. Nonmedical issues apply at lower face bands, while increasing face amounts trigger paramedical exams, blood profiles, EKGs, APS, and financial documentation.",
+      "tables": [
+        {
+          "title": "Medical Requirements by Age & Coverage Amount",
+          "age_ranges": ["0–17", "18–40", "41–50", "51–60", "61–70", "71+"],
+          "coverage_ranges": [
+            "$25,000–$99,999",
+            "$100,000–$300,000",
+            "$300,001–$500,000",
+            "$500,001–$1,000,000",
+            "$1,000,001–$2,000,000",
+            "$2,000,001–$5,000,000",
+            "Over $5,000,000"
+          ],
+          "requirements": [
+            {
+              "age": "0–17",
+              "coverage": "$25,000–$99,999",
+              "tests": ["Nonmedical"]
+            },
+            {
+              "age": "0–17",
+              "coverage": "$100,000–$300,000",
+              "tests": ["Nonmedical", "Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "0–17",
+              "coverage": "$300,001–$500,000",
+              "tests": ["Nonmedical", "Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "0–17",
+              "coverage": "$500,001–$1,000,000",
+              "tests": ["Nonmedical", "Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "0–17",
+              "coverage": "$1,000,001–$2,000,000",
+              "tests": ["Nonmedical", "APS"]
+            },
+            {
+              "age": "0–17",
+              "coverage": "$2,000,001–$5,000,000",
+              "tests": ["Contact Underwriter"]
+            },
+            {
+              "age": "0–17",
+              "coverage": "Over $5,000,000",
+              "tests": ["N/A"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$25,000–$99,999",
+              "tests": ["Nonmedical"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$100,000–$300,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$300,001–$500,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$500,001–$1,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$1,000,001–$2,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "$2,000,001–$5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "18–40",
+              "coverage": "Over $5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "IR", "Financial Docs"]
+            },
+            {
+              "age": "41–50",
+              "coverage": "$25,000–$99,999",
+              "tests": ["Nonmedical"]
+            },
+            {
+              "age": "41–50",
+              "coverage": "$100,000–$300,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "41–50",
+              "coverage": "$300,001–$500,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "41–50",
+              "coverage": "$500,001–$1,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "41–50",
+              "coverage": "$1,000,001–$2,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "41–50",
+              "coverage": "$2,000,001–$5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "41–50",
+              "coverage": "Over $5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "IR", "Financial Docs"]
+            },
+            {
+              "age": "51–60",
+              "coverage": "$25,000–$99,999",
+              "tests": ["Nonmedical"]
+            },
+            {
+              "age": "51–60",
+              "coverage": "$100,000–$300,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "51–60",
+              "coverage": "$300,001–$500,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "51–60",
+              "coverage": "$500,001–$1,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "51–60",
+              "coverage": "$1,000,001–$2,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "51–60",
+              "coverage": "$2,000,001–$5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "APS", "Financial Docs"]
+            },
+            {
+              "age": "51–60",
+              "coverage": "Over $5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "IR", "APS", "Financial Docs"]
+            },
+            {
+              "age": "61–70",
+              "coverage": "$25,000–$99,999",
+              "tests": ["Nonmedical"]
+            },
+            {
+              "age": "61–70",
+              "coverage": "$100,000–$300,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "61–70",
+              "coverage": "$300,001–$500,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam"]
+            },
+            {
+              "age": "61–70",
+              "coverage": "$500,001–$1,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "APS"]
+            },
+            {
+              "age": "61–70",
+              "coverage": "$1,000,001–$2,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "APS"]
+            },
+            {
+              "age": "61–70",
+              "coverage": "$2,000,001–$5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "APS", "Financial Docs"]
+            },
+            {
+              "age": "61–70",
+              "coverage": "Over $5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "IR", "APS", "Financial Docs"]
+            },
+            {
+              "age": "71+",
+              "coverage": "$25,000–$99,999",
+              "tests": ["Nonmedical", "APS"]
+            },
+            {
+              "age": "71+",
+              "coverage": "$100,000–$300,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "APS"]
+            },
+            {
+              "age": "71+",
+              "coverage": "$300,001–$500,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "APS"]
+            },
+            {
+              "age": "71+",
+              "coverage": "$500,001–$1,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "APS"]
+            },
+            {
+              "age": "71+",
+              "coverage": "$1,000,001–$2,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "APS", "Mature Assessment"]
+            },
+            {
+              "age": "71+",
+              "coverage": "$2,000,001–$5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "APS", "Mature Assessment", "Financial Docs"]
+            },
+            {
+              "age": "71+",
+              "coverage": "Over $5,000,000",
+              "tests": ["Blood Profile", "Urinalysis", "Paramedical Exam", "EKG", "IR", "APS", "Mature Assessment", "Financial Docs"]
+            }
+          ]
+        }
+      ]
+    },
+    "risk_classes": {
+      "description": "Ameritas offers six fully underwritten life risk classifications based on health, build, family history, and lifestyle factors.",
+      "classes": [
+        {
+          "name": "Preferred Plus Nontobacco",
+          "criteria": [
+            "No nicotine use in last 5 years (including gum, patch, cigar, pipe, e-cigarettes; exception: ≤2 cigars/month with negative cotinine test)",
+            "Blood pressure ≤ 135/85 (age ≤60) or ≤140/85 (age 61+), no treatment",
+            "Total cholesterol/HDL ratio ≤ 5.0, no medication",
+            "Height/weight within Preferred Plus limits (see Build Chart)",
+            "No heart disease, diabetes, stroke, cancer, or lung disease in personal history",
+            "No alcohol/drug abuse or treatment in last 10 years",
+            "No DWI/DUI/OWI or reckless driving in last 5 years",
+            "No hazardous avocations or private aviation (except scheduled airline crew)",
+            "Family history: No death in parent/sibling < age 60 from CAD, CVD, diabetes, or cancer"
+          ]
+        },
+        {
+          "name": "Preferred Nontobacco",
+          "criteria": [
+            "No nicotine use in last 2 years (exception: ≤2 cigars/month with negative cotinine test)",
+            "Blood pressure ≤ 140/85 (age ≤60) or ≤150/90 (age 61+), no treatment",
+            "Total cholesterol/HDL ratio ≤ 5.5, no medication",
+            "Height/weight within Preferred limits (see Build Chart)",
+            "No heart disease, diabetes, stroke, cancer, or lung disease in personal history",
+            "No alcohol/drug abuse or treatment in last 10 years",
+            "No DWI/DUI/OWI or reckless driving in last 5 years",
+            "No hazardous avocations or private aviation (private pilots considered individually)",
+            "Family history: No parent/sibling death < age 60 from CAD, CVD, diabetes, or cancer"
+          ]
+        },
+        {
+          "name": "Select Nontobacco",
+          "criteria": [
+            "No nicotine use in last 12 months (exception: ≤2 cigars/month with negative cotinine test)",
+            "Blood pressure ≤ 150/90, no treatment",
+            "Total cholesterol/HDL ratio ≤ 6.5, no medication",
+            "Height/weight within Select limits (see Build Chart)",
+            "No heart disease, stroke, or cancer (excluding certain long-remission basal cell/Bowen's disease, testicular/thyroid/cervical cancers >20 years ago)",
+            "No alcohol/drug abuse or treatment in last 8 years",
+            "No DWI/DUI/OWI or reckless driving in last 3 years",
+            "No hazardous avocations or private aviation (private pilots considered individually)",
+            "Family history: ≤1 parent/sibling event (death or diagnosis) < age 60 from listed conditions"
+          ]
+        },
+        {
+          "name": "Standard Nontobacco",
+          "criteria": [
+            "No nicotine use in last 12 months (exception: ≤2 cigars/month with negative cotinine test)",
+            "Height/weight within Standard limits (see Build Chart)",
+            "Medical history acceptable without decline-level impairments (e.g., mild controlled hypertension, hyperlipidemia)",
+            "No recent alcohol/drug abuse (≥5 years remission)",
+            "No DWI/DUI/OWI or reckless driving in last 3 years",
+            "No hazardous avocations or private aviation",
+            "Family history: ≤2 parent/sibling events (death or diagnosis) < age 60 from listed conditions"
+          ]
+        },
+        {
+          "name": "Preferred Tobacco",
+          "criteria": [
+            "Nicotine use within last 12 months (≤1 pack/day for cigarettes)",
+            "Total cholesterol/HDL ratio ≤ 5.0, no medication",
+            "Blood pressure ≤ 135/85 (age ≤60) or ≤140/90 (age 61+), no treatment",
+            "Height/weight within Preferred build limits",
+            "No heart disease, diabetes, stroke, cancer in personal history",
+            "No alcohol/drug abuse or treatment in last 10 years",
+            "No DWI/DUI/OWI or reckless driving in last 5 years",
+            "No hazardous avocations or private aviation (private pilots considered individually)",
+            "Family history: No parent/sibling death < age 60 from CAD, CVD, diabetes, or cancer"
+          ]
+        },
+        {
+          "name": "Standard Tobacco",
+          "criteria": [
+            "Nicotine use within last 12 months in any form",
+            "Height/weight within Standard build limits",
+            "Medical history acceptable under tobacco tables (e.g., controlled hypertension, mild hyperlipidemia)",
+            "Alcohol or drug abuse evaluated on individual basis",
+            "DWI/DUI/OWI or reckless driving evaluated on individual basis",
+            "Hazardous avocations and aviation evaluated on individual basis",
+            "Family history: evaluated on individual basis"
+          ]
+        }
+      ]
+    },
+    "tobacco_guidelines": {
+      "description": "Ameritas differentiates tobacco and nicotine users by duration and frequency, affecting both build-class eligibility and rate classification. Occasional cigar/pipe exceptions apply if confirmed negative on lab tests.",
+      "classifications": [
+        {
+          "type": "Preferred Plus Nontobacco",
+          "classification": "No nicotine use (including gum, patch, cigar, pipe, e-cigarettes) in past 5 years. Up to 2 cigars/month allowed if cotinine-negative."
+        },
+        {
+          "type": "Preferred Nontobacco",
+          "classification": "No nicotine use in past 2 years. Up to 2 cigars/month allowed if cotinine-negative."
+        },
+        {
+          "type": "Select Nontobacco",
+          "classification": "No nicotine use in past 12 months. Up to 2 cigars/month allowed if cotinine-negative."
+        },
+        {
+          "type": "Standard Nontobacco",
+          "classification": "No nicotine use in past 12 months. Up to 2 cigars/month allowed if cotinine-negative."
+        },
+        {
+          "type": "Preferred Tobacco",
+          "classification": "Nicotine use within last 12 months (≤1 pack/day for cigarettes). Cholesterol and BP targets same as Preferred Nontobacco."
+        },
+        {
+          "type": "Standard Tobacco",
+          "classification": "Nicotine use within last 12 months. Build and medical thresholds follow Standard Nontobacco except for nicotine use."
+        },
+        {
+          "type": "Marijuana Use",
+          "classification": "Medical cannabis use is underwritten; recreational moderate use may qualify for Nontobacco or Standard Nontobacco. Heavy use = Tobacco rates or Decline."
+        }
+      ]
+    },
+    "financial_underwriting": {
+      "description": "Ameritas uses income-multiple guidelines to justify face amount relative to economic need. Financial documentation is required on large face amounts or when premium-to-income exceeds thresholds.",
+      "income_multiples": [
+        { "age_range": "18–35", "income_multiple": "30× annual earned income" },
+        { "age_range": "36–45", "income_multiple": "25× annual earned income" },
+        { "age_range": "46–60", "income_multiple": "20× annual earned income" },
+        { "age_range": "61–65", "income_multiple": "10× annual earned income" },
+        { "age_range": "66+",   "income_multiple": "5× annual earned income" }
+      ]
+    },
+    "special_considerations": {
+      "description": "Ameritas underwriters evaluate additional factors such as residence/travel, avocations, aviation, foreign national status, and military service that may alter eligibility or rating.",
+      "factors": [
+        {
+          "factor": "Residence & Travel – Foreign Nationals",
+          "guideline": "Full documentation (passport, visa) required. Best consideration usually Standard; Preferred may be allowed for 'A‐List' countries. All exam/lab work must be completed in the U.S. Max issue age 75. No accelerated or teleunderwriting for these applicants."
+        },
+        {
+          "factor": "U.S. Citizens Residing Abroad (Expatriates)",
+          "guideline": "Must complete all requirements in the U.S. Eligible if holding an approved visa or green card. Max issue age 75. No accelerated underwriting."
+        },
+        {
+          "factor": "Foreign Travel",
+          "guideline": "Up to 30 days/year in non-excluded countries is acceptable without extra rating. >30 days requires detailed trip information and underwriter review; certain destinations may be declined."
+        },
+        {
+          "factor": "Foreign Missionaries",
+          "guideline": "May not qualify if stationed in high-risk regions; typically limited to <2 weeks/year outside U.S. Underwriting discretion applies."
+        },
+        {
+          "factor": "Applicants Who Do Not Speak English",
+          "guideline": "Agent must be fluent in applicant's native language. All paperwork must be completed in English. Variable products not available if applicant cannot read/write English."
+        },
+        {
+          "factor": "Accelerated Underwriting",
+          "guideline": "Ages 18–50: $100k–$2M face (all life products). Ages 51–60: $100k–$1M face. No major medical conditions, no hazardous occupations/avocations, no recent DUI/DWI, no premium financing. Preferred/Standard risk classes only."
+        },
+        {
+          "factor": "EZ App Teleunderwriting",
+          "guideline": "Ages 18–70, up to $5M total face across Ameritas companies. Applicants complete interview + mini‐exam (blood, urine, vitals) as needed based on age & amount."
+        },
+        {
+          "factor": "Avocations & Aviation – Civil & Private",
+          "guideline": "Recreational scuba to 100ft, private aviation, racing, etc. require underwriter review. Preferred classes not available for high‐risk depths/hours. Aviation Exclusion Rider required for pilots with recent activity."
+        },
+        {
+          "factor": "Military Service",
+          "guideline": "Active duty considered; Special Forces automatically ineligible. Foreign deployments evaluated individually. Aviation roles (military pilot) usually rated with flat extra."
+        }
+      ]
+    }
+  }
+} 

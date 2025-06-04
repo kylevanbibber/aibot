@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dignitysolutions_immediate",
+    "name": "Immediate Death Benefit Plan",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 2500,
+    "coverage_max": 50000,
+    "premium_factor": 2.5,
+    "features": [
+      "Pays 100% face for natural death any time (no graded structure)",
+      "Pays 100% for accidental death at any age",
+      "Telephone interview only for applicants age 71–85",
+      "Build chart maximum weight/height must fall within Immediate column",
+      "Face limits: $2,500–$50,000 (ages 50–75); $2,500–$25,000 (ages 76–85)"
+    ]
+  },
+  {
+    "id": "dignitysolutions_graded",
+    "name": "Graded Death Benefit Plan",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 2500,
+    "coverage_max": 25000,
+    "premium_factor": 2.5,
+    "features": [
+      "Pays 30% of face in year 1, 70% in year 2, 100% thereafter (100% for accidental death any year)",
+      "Telephone interview only for ages 71–85",
+      "Build chart maximum weight/height must fall within Graded column",
+      "Face limits: $2,500–$25,000 (ages 50–85)",
+      "Applicants with controlled medical histories in past 2–3 years qualify here"
+    ]
+  },
+  {
+    "id": "dignitysolutions_rop",
+    "name": "Return of Premium Death Benefit Plan",
+    "type": "whole_life",
+    "term_years": null,
+    "coverage_min": 2500,
+    "coverage_max": 25000,
+    "premium_factor": 2.5,
+    "features": [
+      "Refunds 100% of premiums plus interest if death during graded period (2 years if ≥65; 3 years if <65); 100% thereafter",
+      "Pays 100% for accidental death any year",
+      "Telephone interview only for ages 71–85",
+      "Build chart maximum weight/height must fall within ROP column",
+      "Face limits: $2,500–$25,000 (ages 50–85)"
+    ]
+  }
+] 

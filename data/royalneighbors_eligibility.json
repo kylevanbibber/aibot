@@ -1,0 +1,26 @@
+{
+  "royalneighbors_siwl": {
+    "age_min": 50,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "royalneighbors_gdb": {
+    "age_min": 50,
+    "age_max": 85,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  },
+  "royalneighbors_gi": {
+    "age_min": 50,
+    "age_max": 80,
+    "income_min": 30000,
+    "health_conditions_max": 2,
+    "smoker_eligible": true,
+    "smoker_premium_factor": 1.5
+  }
+} 
